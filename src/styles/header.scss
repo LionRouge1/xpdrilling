@@ -1,0 +1,39 @@
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  font-size: 16px;
+
+  .social-media {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 10rem;
+  }
+
+  .contact-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    svg {
+      color: var(--global-color);
+      margin-right: 0.5rem;
+      font-size: 18px;
+      line-height: 70px;
+      margin-bottom: -4px;
+    }
+  }
+
+  li {
+    list-style: none;
+    margin-right: 1rem;
+
+    a {
+      color: #000;
+      font-size: 16px;
+    }
+  }
+}
