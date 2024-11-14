@@ -58,9 +58,13 @@
       font-weight: bold;
       position: relative;
       width: fit-content;
+      animation: rightToLeft 3s forwards;
+      animation-delay: 0s;
     }
 
     h1 {
+      animation: bottomToTop 6s ease-in-out;
+      animation-delay: 0s;
       font-size: 76px;
       text-align: center;
       color: var(--white-color);
@@ -92,12 +96,15 @@
       background-color: var(--white-color);
       color: var(--link-color-normal);
       position: relative;
+      animation: animateWidth 12s forwards;
+      animation-delay: 0s;
     }
 
     .home-btn:nth-child(2) {
       background-color: var(--global-color);
       color: var(--white-color);
       position: relative;
+      animation: animateWidth 15s forwards;
     }
 
     .home-btn::before {
@@ -134,15 +141,6 @@
 
     .home-btn:not(:last-child) {
       margin-right:  30px;
-    }
-
-    @keyframes underlineAnimation {
-      0% {
-        width: 0;
-      }
-      100% {
-        width: 100%;
-      }
     }
   }
 

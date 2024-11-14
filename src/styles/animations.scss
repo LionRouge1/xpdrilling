@@ -1,0 +1,31 @@
+@keyframes rightToLeft {
+  0%, 20% { opacity: 0; transform: translateX(30px); }
+  20%, 100% { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes bottomToTop {
+  0%, 20% {
+    opacity: 0;
+    transform: translateY(100px);
+    visibility: hidden;
+  }
+  20%, 100% {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+  }
+}
+
+@keyframes animateWidth {
+  0%, 20% { width: 0; opacity: 0; visibility: hidden;}
+  20%, 100% { width: 188px; opacity: 1; visibility: visible;}
+}
+
+@keyframes underlineAnimation {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
