@@ -6,12 +6,24 @@
   padding-left: 2rem;
   min-height: 105px;
 
+  .mobile-menu {
+    display: none;
+
+    @media (max-width: 900px) {
+      display: block;
+      margin-right: 2rem;
+      svg {
+        font-size: 40px;
+      }
+    }
+  }
+
   img {
     height: 60px;
     width: 157px;
   }
 
-  ul {
+  ul.nav-links {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -33,6 +45,10 @@
           color: var(--link-color-hover);
         }
       }
+    }
+
+    @media (max-width: 900px) {
+      display: none;
     }
   }
 
@@ -71,6 +87,10 @@
       right: 53px;
       font-size: 15px;
       line-height: 20px;
+    }
+
+    @media (max-width: 900px) {
+      display: none;
     }
   }
 }
