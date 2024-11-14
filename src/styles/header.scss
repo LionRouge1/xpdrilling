@@ -1,16 +1,28 @@
 header {
   width: 100%;
+  height: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
   font-size: 16px;
+  border-bottom: 1px solid #ddd;
 
   .social-media {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-around;
+    place-items: center;
+    gap: 10px;
+    margin-bottom: -8px;
     width: 10rem;
+
+    svg {
+      font-size: 15px;
+
+      &:hover {
+        color: var(--global-color);
+      }
+    }
   }
 
   .contact-info {
