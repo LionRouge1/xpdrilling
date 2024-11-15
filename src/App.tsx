@@ -1,4 +1,3 @@
-import './App.css'
 import Footer from './components/Footer';
 import Header from './components/Header';
 import Home from './components/Home';
@@ -11,8 +10,10 @@ const App = () => (
     <Header />
     <Menu />
     <Home />
-    <Qualities />
-    <OurOffers />
+    <main>
+      <Qualities />
+      <OurOffers />
+    </main>
     <Footer />
   </>
 );

@@ -64,3 +64,77 @@ body {
   background-color: #f2f3f5;
 }
 
+main {
+  width: 80%;
+  margin: 0 auto;
+
+  section {
+    width: 100%;
+  }
+}
+
+section h4 {
+  letter-spacing: 3px;
+  font-size: 15px;
+  padding-bottom: 10px;
+  position: relative;
+  width: fit-content;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    width: 100%;
+    height: 2px;
+    background-color: var(--global-color);
+  }
+};
+
+section h2 {
+  color: black;
+  font-size: 55px;
+  line-height: 55px;
+};
+
+.btn {
+  padding-left: 20px;
+  display: inline-block;
+  width: 188px;
+  text-align: start;
+  line-height: 60px;
+  font-size: 16px;
+  text-decoration: none;
+  background-color: var(--global-color);
+  color: var(--white-color);
+  position: relative;
+}
+
+.btn::before {
+  position: absolute;
+  content: '';
+  width: 35px;
+  height: 1px;
+  right: 45px;
+  top: 50%;
+  background-color: var(--link-color-normal);
+
+  @media (max-width: 1050px) {
+    right: 15px;
+  }
+}
+
+.btn::after {
+  position: absolute;
+  content: ">";
+  top: 29%;
+  right: 43px;
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: bold;
+
+  @media (max-width: 1050px) {
+    right: 13px;
+  }
+}
+
