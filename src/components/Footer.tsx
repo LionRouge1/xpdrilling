@@ -1,6 +1,5 @@
 import { MdOutlineWifiCalling } from "react-icons/md";
-import { FaFacebookSquare, FaTwitter, FaInstagram, FaYoutube, FaPhoneVolume } from 'react-icons/fa';
-import { FaLocationDot, FaEnvelope } from 'react-icons/fa6';
+import { FaFacebookSquare, FaTwitter, FaInstagram, FaYoutube } from 'react-icons/fa';
 import '../styles/footer.scss'
 
 const Footer = () => {
@@ -25,17 +24,19 @@ const Footer = () => {
           <ul>
             <li><a href="/">Home</a></li>
             <li><a href="/">About Us</a></li>
-            <li><a href="/">Services</a></li>
-            <li><a href="/">Contact Us</a></li>
+            <li><a href="/">Company News</a></li>
+            <li><a href="/">Projects</a></li>
+            <li><a href="/">Case Study</a></li>
           </ul>
         </article>
         <article>
           <h3>Solution & Services</h3>
           <ul>
-            <li><a href="/">Web Development</a></li>
-            <li><a href="/">App Development</a></li>
-            <li><a href="/">UI/UX Design</a></li>
-            <li><a href="/">Digital Marketing</a></li>
+            <li><a href="/">Industrial Supplies</a></li>
+            <li><a href="/">Project Pricing</a></li>
+            <li><a href="/">Client Testimonials</a></li>
+            <li><a href="/">Our Philosophy</a></li>
+            <li><a href="/">Cost Calculator</a></li>
           </ul>
         </article>
         <article>
