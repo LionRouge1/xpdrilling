@@ -4,6 +4,7 @@ import HomePage from "./pages/HomePage";
 import AboutUsPage from "./pages/AboutUsPage";
 import ServicesPage from "./pages/ServicesPage";
 import FleetPage from "./pages/FleetPage";
+import NotFound from "./components/NotFound";
 
 const App = () => (
   <Routes>
@@ -11,7 +12,8 @@ const App = () => (
       <Route index element={<HomePage />} />
       <Route path="about-us" element={<AboutUsPage />} />
       <Route path="services" element={<ServicesPage />} />
-      <Route path="about-us" element={<FleetPage />} />
+      <Route path="fleet" element={<FleetPage />} />
+      <Route path='*' element={<NotFound />} />
     </Route>
   </Routes>
   // <>

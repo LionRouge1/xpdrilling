@@ -5,10 +5,10 @@ import '../styles/header.scss';
 const Header = () => (
   <header>
     <ul className="social-media">
-      <li><a href="#" target="_black"><FaFacebookSquare /></a></li>
-      <li><a href="#" target="_black"><FaTwitter /></a></li>
-      <li><a href="#" target="_black"><FaInstagram /></a></li>
-      <li><a href="#" target="_black"><FaYoutube /></a></li>
+      <li><a href="#" target="_black" rel="noopener noreferrer"><FaFacebookSquare /></a></li>
+      <li><a href="#" target="_black" rel="noopener noreferrer"><FaTwitter /></a></li>
+      <li><a href="#" target="_black" rel="noopener noreferrer"><FaInstagram /></a></li>
+      <li><a href="#" target="_black" rel="noopener noreferrer"><FaYoutube /></a></li>
     </ul>
     <ul className="contact-info">
       <li><FaLocationDot /> Los Angels Gournadi, 1230 Bariasl</li>
