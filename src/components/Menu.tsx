@@ -32,31 +32,23 @@ const Menu = () => {
           <li>
             <NavLink to="about-us">About Us <MdArrowDropDown /></NavLink>
             <ul className="sous-menu">
-              <li><a href="#">About us</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Our Team Member</a></li>
+              <li><a href="#">FAQ</a></li>
             </ul>
           </li>
           <li>
             <NavLink to="services">Services <MdArrowDropDown /></NavLink>
             <ul className="sous-menu">
-              <li><a href="#">Projects 1</a></li>
-              <li><a href="#">Projects 2</a></li>
-              <li><a href="#">Projects 3</a></li>
+              <li><NavLink to="fleet">Fleet <MdArrowDropDown /></NavLink></li>
+              <li><NavLink to="hseq">HSEQ <MdArrowDropDown /></NavLink></li>
             </ul>
           </li>
           <li>
-            <a href="/about">Fleet</a>
-            <NavLink to="fleet">Fleet <MdArrowDropDown /></NavLink>
+            <a href="/">Sustainability</a>
+            <NavLink to="sustainability">Sustainability <MdArrowDropDown /></NavLink>
           </li>
           <li>
-            <a href="#">HSEQ</a>
-          </li>
-          <li>
-            <a href="#">Sustainability</a>
-          </li>
-          <li>
-            <a href="#">Contact Us</a>
+            <NavLink to="contact-us">Contact Us <MdArrowDropDown /></NavLink>
           </li>
         </ul>
       </div>

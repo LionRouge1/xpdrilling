@@ -1,0 +1,30 @@
+.page-banner {
+  height: 415px;
+  display: flex;
+  // justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 0;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--secondary-color);
+    opacity: 0.3;
+    z-index: 0;
+  }
+
+  h1 {
+    font-size: 46px;
+    color: var(--white-color);
+    z-index: 1;
+    margin: 0 200px;
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 700;
+    line-height: 70px;
+  }
+}
