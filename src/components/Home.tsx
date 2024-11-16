@@ -4,8 +4,9 @@ import video1 from '../assets/1.mp4';
 import video2 from '../assets/2.mp4';
 import video3 from '../assets/3.mp4';
 
+const randomVideo = Math.floor(Math.random() * 4);;
 const Home = () => {
-  const [video, setVideo] = useState(0);
+  const [video, setVideo] = useState(randomVideo);
 
   const next = () => {
     setVideo((prev) => (
