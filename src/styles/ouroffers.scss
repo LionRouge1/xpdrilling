@@ -40,7 +40,7 @@
       }
 
       &-text {
-        color: var(--global-color);
+        color: var(--icon-color);
         font-size: 16px;
         text-transform: uppercase;
       }
@@ -74,6 +74,11 @@
         @media screen and (max-width: 700px) {
           left: 33%;
         }
+
+        @media screen and (max-width: 500px) {
+          width: 140px;
+          height: 140px;
+        }
       }
     }
   }
@@ -95,10 +100,15 @@
         display: inline-block;
 
         svg {
-          color: var(--global-color);
+          color: var(--icon-color);
           font-size: 25px;
           transform: translateY(5px);
         }
+      }
+
+      @media (max-width: 500px) {
+        height: auto;
+        grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
       }
     }
 
@@ -110,7 +120,7 @@
       border-top: 1px solid #ddd;
 
       svg {
-        color: var(--global-color);
+        color: var(--icon-color);
         font-size: 60px;
         display: block;
         margin-right: 20px;

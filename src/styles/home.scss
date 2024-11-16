@@ -8,6 +8,11 @@
   align-items: center;
   overflow: hidden;
 
+  &:hover .slider-nav {
+    animation: appeared 3s forwards;
+    animation-delay: 0s;
+  }
+
   &::before {
     z-index: 001;
     content: '';
@@ -58,17 +63,19 @@
       font-weight: bold;
       position: relative;
       width: fit-content;
-      animation: rightToLeft 3s forwards;
+      animation: rightToLeft 2s forwards;
       animation-delay: 0s;
     }
 
     h1 {
-      animation: bottomToTop 6s ease-in-out;
-      animation-delay: 0s;
       font-size: 76px;
       text-align: center;
       color: var(--white-color);
       margin-bottom: 20px;
+      transform: translateY(100px);
+      opacity: 0;
+      animation: bottomToTop 1s forwards;
+      animation-delay: 2s;
     }
 
     p::after {
@@ -78,7 +85,7 @@
       bottom: 26px;
       width: 0;
       height: 2px;
-      background-color: var(--global-color);
+      background-color: var(--icon-color);
       animation: underlineAnimation 2s forwards;
     }
 
@@ -96,8 +103,10 @@
       background-color: var(--white-color);
       color: var(--link-color-normal);
       position: relative;
-      animation: animateWidth 12s forwards;
-      animation-delay: 0s;
+      width: 0;
+      visibility: hidden;
+      animation: animateWidth 1.5s forwards;
+      animation-delay: 3s;
 
       &:hover {
         background-color: var(--blackish-bg-color);
@@ -109,7 +118,10 @@
       background-color: var(--global-color);
       color: var(--white-color);
       position: relative;
-      animation: animateWidth 15s forwards;
+      width: 0;
+      visibility: hidden;
+      animation: animateWidth 2s forwards;
+      animation-delay: 4s;
 
       &:hover {
         background-color: var(--blackish-bg-color);
@@ -175,7 +187,7 @@
 
   .slider-nav {
     background-color: var(--white-color);
-    color: var(--global-color);
+    color: var(--icon-color);
     font-size: 20px;
     width: 40px;
     height: 60px;
@@ -183,6 +195,8 @@
     bottom: 35%;
     z-index: 002;
     border: none;
+    animation: desappeared 3s forwards;
+    animation-delay: 10s;
   }
 
   .prev {
