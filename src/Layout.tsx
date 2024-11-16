@@ -1,9 +1,18 @@
 import { Outlet } from 'react-router-dom';
+import Header from './components/Header';
+import Menu from './components/Menu';
+import Footer from './components/Footer';
 
 const Layout = () => (
-  <main>
+  <>
+    <Header />
+    <Menu />
     <Outlet />
-  </main>
+    <Footer />
+  </>
+  // <main>
+  //   <Outlet />
+  // </main>
 );
 
 export default Layout;

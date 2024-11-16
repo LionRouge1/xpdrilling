@@ -1,27 +1,32 @@
-import Footer from './components/Footer';
-import GetInTouch from './components/GetInTouch';
-import Header from './components/Header';
-import Home from './components/Home';
-import Menu from './components/Menu';
-import OurOffers from './components/OurOffers';
-import OurServices from './components/OurServices';
-import Qualities from './components/Qualities';
-import WeHave from './components/WeHave';
+import { Route, Routes } from "react-router-dom";
+import Layout from "./Layout";
+import HomePage from "./pages/HomePage";
+import AboutUsPage from "./pages/AboutUsPage";
+import ServicesPage from "./pages/ServicesPage";
+import FleetPage from "./pages/FleetPage";
 
 const App = () => (
-  <>
-    <Header />
-    <Menu />
-    <Home />
-    <main>
-      <Qualities />
-      <OurOffers />
-      <OurServices />
-      <WeHave />
-      <GetInTouch />
-    </main>
-    <Footer />
-  </>
+  <Routes>
+    <Route path="/" element={<Layout />}>
+      <Route index element={<HomePage />} />
+      <Route path="about-us" element={<AboutUsPage />} />
+      <Route path="services" element={<ServicesPage />} />
+      <Route path="about-us" element={<FleetPage />} />
+    </Route>
+  </Routes>
+  // <>
+  //   <Header />
+  //   <Menu />
+  //   <Home />
+  //   <main>
+  //     <Qualities />
+  //     <OurOffers />
+  //     <OurServices />
+  //     <WeHave />
+  //     <GetInTouch />
+  //   </main>
+  //   <Footer />
+  // </>
 );
 
 export default App
