@@ -35,8 +35,8 @@ const Home = () => {
         <video className="video-slide" src={video2} autoPlay muted loop></video>
         <video className="video-slide" src={video3} autoPlay muted loop></video>
         <div className="slide">
-          <p className="slide-title">CREATE WHATEVER YOU WANT</p>
-          <h1>Quality leads with the industry!</h1>
+          <p className="slide-title">Welcome to XP Drilling Services</p>
+          <h1>Driven by Excellence, Powered by Innovation!</h1>
           <div className="btns">
             <a href="#" className="home-btn">Contact Us</a>
             <a href="#" className="home-btn">About Us</a>

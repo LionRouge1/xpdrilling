@@ -2,15 +2,15 @@
 
 :root {
   --global-text-color: #666;
-  --global-color: #dd042b;
+  --global-color: #ceaa52;
   --secondary-color: #19232b;
-  --gradient-color-first: #dd042b;
-  --gradient-color-last: #dd042b;
+  --gradient-color-first: #ceaa52;
+  --gradient-color-last: #ceaa52;
   --logo-height: 60px;
   --sticky-logo-height: 60px;
   --responsive-logo-height: 50px;
   --link-color-normal: #19232b;
-  --link-color-hover: #dd042b;
+  --link-color-hover: #ceaa52;
   --responsive-breakpoint: 1200px;
   --white-color: #fff;
   --light-bg-color: #f2f3f5;
@@ -61,7 +61,7 @@ body {
   text-transform: none;
   line-height: 1.7;
   color: #666;
-  background-color: #f2f3f5;
+  background-color: #ffffff;
 }
 
 main {
@@ -70,6 +70,14 @@ main {
   section {
     width: 80%;
     margin: 80px auto;
+
+    @media (max-width: 1200px) {
+      width: 90%;
+    }
+
+    @media (max-width: 950px) {
+      width: 95%;
+    }
   }
 }
 

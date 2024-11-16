@@ -1,0 +1,40 @@
+.get-in-touch {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    filter: brightness(0.5);
+    z-index: -1;
+  }
+
+  &-content {
+    text-align: center;
+    width: 50%;
+    margin-right: 10%;
+    // margin: 100px auto;
+
+    @media (max-width: 870px) {
+      width: 100%;
+      margin: 10px;
+    }
+
+    p {
+      margin-top: 30px;
+      font-size: 30px;
+      color: #fff;
+      margin-bottom: 20px;
+    }
+  }
+}

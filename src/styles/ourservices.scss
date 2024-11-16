@@ -13,6 +13,16 @@
     margin: 50px auto;
     padding-top: 50px;
     padding-bottom: 50px;
+
+    a.desktop {
+      @media (max-width: 870px) {
+        display: none;
+      }
+    }
+
+    @media (max-width: 870px) {
+      width: 95%;
+    }
   }
 
   &::after {
@@ -23,6 +33,10 @@
     right: 0;
     background-color: var(--global-color);
     position: absolute;
+
+    @media (max-width: 870px) {
+      display: none;
+    }
   }
 
   &::before {
@@ -33,10 +47,18 @@
     left: 0;
     background-color: var(--global-color);
     position: absolute;
+
+    @media (max-width: 870px) {
+      display: none;
+    }
   }
 
   h2 {
     width: 60%;
+
+    @media (max-width: 870px) {
+      width: 100%;
+    }
   }
 
   .btn {
@@ -46,16 +68,27 @@
   .services-content {
     width: 70%;
     margin: 20px 0;
+    display: grid;
 
     p {
       font-size: 20px;
       color: black;
     }
 
+    a.mobile {
+      display: none;
+
+      @media (max-width: 870px) {
+        display: block;
+      }
+    }
+
     ul {
       display: flex;
+      width: 100%;
       justify-content: space-between;
-      margin: 30px;
+      overflow-x: scroll;
+      margin: 30px 0;
 
       li {
         list-style: none;
@@ -71,6 +104,7 @@
         height: 448px;
         background-color: var(--white-color);
         box-shadow: 0px 0px 16px #ddd;
+        margin: 0 20px;
         // padding: 35px 28px;
         // position: relative;
 
@@ -115,6 +149,10 @@
           background-color: var(--blackish-bg-color);
         }
       }
+    }
+
+    @media (max-width: 870px) {
+      width: 100%;
     }
   }
 }

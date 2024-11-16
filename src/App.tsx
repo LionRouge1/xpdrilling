@@ -1,4 +1,5 @@
 import Footer from './components/Footer';
+import GetInTouch from './components/GetInTouch';
 import Header from './components/Header';
 import Home from './components/Home';
 import Menu from './components/Menu';
@@ -17,6 +18,7 @@ const App = () => (
       <OurOffers />
       <OurServices />
       <WeHave />
+      <GetInTouch />
     </main>
     <Footer />
   </>

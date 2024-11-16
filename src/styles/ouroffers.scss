@@ -1,11 +1,16 @@
 .our-offers {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 
   .offers-images-container {
     display: flex;
     position: relative;
     place-items: center;
+    margin: 20px 0;
+    flex-grow: 1;
+    width: 580px;
+    // flex-basis: 510px;
 
     img:not(:last-child) {
       margin-right: 30px;
@@ -14,7 +19,7 @@
     img {
       height: 100%;
       width: 100%;
-      max-width: 275px;
+      width: 275px;
     }
 
     .trusted {
@@ -26,7 +31,7 @@
       place-items: center;
       border-radius: 50%;
       position: absolute;
-      left: 33%;
+      left: 200px;
       padding: 20px;
       align-content: center;
 
@@ -46,13 +51,40 @@
         color: black;
       }
     }
+
+    @media screen and (max-width:870px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      width: 100%;
+
+      img:not(:last-child) {
+        margin-right: 0;
+      }
+
+      img {
+        height: 100%;
+        width: 100%;
+        width: 100%;
+      }
+
+      .trusted {
+        left: 38%;
+
+        @media screen and (max-width: 700px) {
+          left: 33%;
+        }
+      }
+    }
   }
 
   .offer-content {
-    width: 510px;
+    // width: 510px;
     display: grid;
     grid-template-rows: auto auto auto auto;
     gap: 20px;
+    flex-grow: 1;
+    flex-basis:  510px;
 
     ul {
       height: 100px;

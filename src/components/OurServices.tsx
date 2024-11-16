@@ -8,7 +8,7 @@ const OurServices = () => (
     <div className="services-container">
       <h4>OUR SERVICES</h4>
       <h2 className="services-title">Comprehensive Drilling Solutions</h2>
-      <a href="#" className="btn">Learn more</a>
+      <a href="#" className="btn desktop">Learn more</a>
       <div className="services-content">
         <p>
           Whether you need precision-grade control drilling or core
@@ -16,6 +16,7 @@ const OurServices = () => (
           results. Our fleet is equipped with the latest technologies
           to ensure accuracy, efficiency, and safety in every project.
         </p>
+        <a href="#" className="btn mobile">Learn more</a>
         <ul>
           <li className="service">
             <div className="img">

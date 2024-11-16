@@ -12,8 +12,8 @@ const Header = () => (
     </ul>
     <ul className="contact-info">
       <li><FaLocationDot /> Los Angels Gournadi, 1230 Bariasl</li>
-      <li><FaEnvelope /> info@example.com</li>
-      <li><FaPhoneVolume /> +1 (212) 255-5511</li>
+      <li><a href="mailto:"><FaEnvelope />  info@xpdrilling.com</a></li>
+      <li><a href="tel:+233263119815"><FaPhoneVolume /> +233 (0) 26 311 9815</a></li>
     </ul>
   </header>
 );
