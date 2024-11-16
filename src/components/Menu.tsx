@@ -32,6 +32,7 @@ const Menu = () => {
           <li>
             <NavLink to="about-us">About Us <MdArrowDropDown /></NavLink>
             <ul className="sous-menu">
+              <li><NavLink to="about-us">About Us</NavLink></li>
               <li><a href="#">Our Team Member</a></li>
               <li><a href="#">FAQ</a></li>
             </ul>
@@ -39,12 +40,12 @@ const Menu = () => {
           <li>
             <NavLink to="services">Services <MdArrowDropDown /></NavLink>
             <ul className="sous-menu">
-              <li><NavLink to="fleet">Fleet <MdArrowDropDown /></NavLink></li>
-              <li><NavLink to="hseq">HSEQ <MdArrowDropDown /></NavLink></li>
+              <li><NavLink to="services">Services <MdArrowDropDown /></NavLink></li>
+              <li><NavLink to="fleet">Fleet</NavLink></li>
+              <li><NavLink to="hseq">HSEQ</NavLink></li>
             </ul>
           </li>
           <li>
-            <a href="/">Sustainability</a>
             <NavLink to="sustainability">Sustainability <MdArrowDropDown /></NavLink>
           </li>
           <li>
