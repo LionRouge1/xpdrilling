@@ -33,7 +33,7 @@ const Menu = () => {
             <NavLink to="about-us">About Us <MdArrowDropDown /></NavLink>
             <ul className="sous-menu">
               <li><NavLink to="about-us">About Us</NavLink></li>
-              <li><a href="#">Our Team Member</a></li>
+              <li><NavLink to="our-team">Our Team Members</NavLink></li>
               <li><a href="#">FAQ</a></li>
             </ul>
           </li>

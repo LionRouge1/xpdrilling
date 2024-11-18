@@ -1,0 +1,133 @@
+.our-team {
+  text-align: center;
+  margin-top: 50px;
+
+  & > p {
+    padding-bottom: 30px;
+    width: 70%;
+    margin: 0 auto;
+    display: block;
+
+    @media (max-width: 900px) {
+      width: 90%;
+    }
+  }
+
+  & > h4 {
+    margin: 0 auto;
+  }
+
+  .team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .team-card {
+    margin: 20px;
+    padding-top: 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 5px;
+    width: 300px;
+    text-align: center;
+
+    img {
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+    }
+
+    h3 {
+      margin: 10px 0;
+    }
+
+    p {
+      color: var(--global-color);
+    }
+
+    .social-media {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+      background-color: var(--secondary-color);
+      padding-top: 5px;
+      
+      li {
+        list-style: none;
+      }
+
+      a {
+        margin: 0 20px;
+        color: #fff;
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+.our-impact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  margin: 30px 0;
+
+  &-content {
+    background-image: url('../assets/pattern.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: var(--blackish-color);
+    padding: 100px;
+    height: 600px;
+
+    p {
+      margin-top: 50px;
+    }
+
+    color: var(--white-color);
+  }
+
+  &-image {
+    height: 600px;
+    
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.call-for-action {
+  width: 100%;
+  height: 500px;
+  margin: 30px 0 0 0;
+  background-image: url('../assets/join-us.jpg');
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  z-index: 0;
+
+  p {
+    font-size: 20px;
+    width: 60%;
+    z-index: 1;
+    margin-bottom: 40px;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f2f3f5e1;
+    z-index: 0;
+  }
+}

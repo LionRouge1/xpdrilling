@@ -8,6 +8,7 @@ import ContactUsPage from "./pages/ContactUsPage";
 import NotFound from "./components/NotFound";
 import HseqPage from "./pages/HseqPage";
 import SustainabilityPage from "./pages/SustainabilityPage";
+import TeamPage from "./pages/TeamPage";
 
 const App = () => (
   <BrowserRouter>
@@ -17,6 +18,7 @@ const App = () => (
         <Route path="about-us" element={<AboutUsPage />} />
         <Route path="services" element={<ServicesPage />} />
         <Route path="fleet" element={<FleetPage />} />
+        <Route path="our-team" element={<TeamPage />} />
         <Route path="contact-us" element={<ContactUsPage />} />
         <Route path="hseq" element={<HseqPage />} />
         <Route path="sustainability" element={<SustainabilityPage />} />
