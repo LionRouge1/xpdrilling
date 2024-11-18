@@ -9,12 +9,12 @@ const Menu = () => {
 
   const showMobileMenu = () => {
     const navContainer = document.querySelector('.nav-container');
-    if(!navContainer?.classList.contains('overlay')) navContainer?.classList.add('overlay');
+    if (!navContainer?.classList.contains('overlay')) navContainer?.classList.add('overlay');
   }
 
   const hideMobileMenu = () => {
     const navContainer = document.querySelector('.nav-container');
-    if(navContainer?.classList.contains('overlay')) navContainer?.classList.remove('overlay');
+    if (navContainer?.classList.contains('overlay')) navContainer?.classList.remove('overlay');
   }
 
 
@@ -38,13 +38,12 @@ const Menu = () => {
             </ul>
           </li>
           <li>
-            <NavLink to="services">Services <MdArrowDropDown /></NavLink>
-            <ul className="sous-menu">
-              <li><NavLink to="services">Services</NavLink></li>
-              <li><NavLink to="fleet">Fleet</NavLink></li>
-              <li><NavLink to="hseq">HSEQ</NavLink></li>
-            </ul>
+            <NavLink to="services">Services</NavLink>
           </li>
+          <li>
+            <NavLink to="fleet">Fleet</NavLink>
+          </li>
+          <li><NavLink to="hseq">HSEQ</NavLink></li>
           <li>
             <NavLink to="sustainability">Sustainability</NavLink>
           </li>
