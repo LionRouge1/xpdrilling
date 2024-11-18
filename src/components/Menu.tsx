@@ -40,16 +40,16 @@ const Menu = () => {
           <li>
             <NavLink to="services">Services <MdArrowDropDown /></NavLink>
             <ul className="sous-menu">
-              <li><NavLink to="services">Services <MdArrowDropDown /></NavLink></li>
+              <li><NavLink to="services">Services</NavLink></li>
               <li><NavLink to="fleet">Fleet</NavLink></li>
               <li><NavLink to="hseq">HSEQ</NavLink></li>
             </ul>
           </li>
           <li>
-            <NavLink to="sustainability">Sustainability <MdArrowDropDown /></NavLink>
+            <NavLink to="sustainability">Sustainability</NavLink>
           </li>
           <li>
-            <NavLink to="contact-us">Contact Us <MdArrowDropDown /></NavLink>
+            <NavLink to="contact-us">Contact Us </NavLink>
           </li>
         </ul>
       </div>
