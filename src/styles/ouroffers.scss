@@ -72,6 +72,8 @@
         @media screen and (max-width: 500px) {
           width: 140px;
           height: 140px;
+
+          left: calc(49% - 70px);
         }
       }
     }
