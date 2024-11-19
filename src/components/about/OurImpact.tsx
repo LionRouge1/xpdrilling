@@ -1,4 +1,6 @@
 import Impact from '../../assets/impact.jpg'
+import CallForAction from './CallForAction';
+import JoinUs from '../../assets/join-us.jpg';
 
 const OurImpact = () => (
   <>
@@ -16,15 +18,12 @@ const OurImpact = () => (
         <img src={Impact} alt="Our Impact" />
       </div>
     </section>
-    <section className="call-for-action">
-      <h4>Join us in making a difference</h4>
-      <p>
-        Want to learn more about how XP Drilling Services can support your exploration project?
-        Get in touch with us today to discuss your drilling needs and how we can deliver tailored
-        solutions to meet your goals.
-      </p>
-      <a href="#" className="btn">Contact Us</a>
-    </section>
+    <CallForAction
+      title='Join us in making a difference'
+      description={['Want to learn more about how XP Drilling Services can support your exploration project?', 'Get in touch with us today to discuss your drilling needs and how we can deliver tailored solutions to meet your goals.']}
+      image={JoinUs}
+      butonText='Contact Us'
+    />
   </>
 );
 
