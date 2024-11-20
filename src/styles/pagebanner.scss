@@ -1,9 +1,11 @@
 .page-banner {
   height: 415px;
   display: flex;
-  // justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--white-color);
   position: relative;
+  padding-left: 200px;
   z-index: 0;
 
   &::before {
@@ -22,9 +24,13 @@
     font-size: 46px;
     color: var(--white-color);
     z-index: 1;
-    margin: 0 200px;
+    margin-bottom: 5px;
     font-family: "Titillium Web", sans-serif;
     font-weight: 700;
     line-height: 70px;
+  }
+
+  p{
+    z-index: 1;
   }
 }

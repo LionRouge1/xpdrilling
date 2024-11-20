@@ -1,5 +1,6 @@
 export type BannerProps = {
   title: string;
+  sousTitle: string;
   image: any;
 }
 
@@ -40,6 +41,7 @@ export type PageOptionProps = {
 export type ContentPageProps = {
   postBanner: PostBannerProps;
   pageOptions: PageOptionProps[];
-  pageUrl: string;
+  page: {title: string, url: string};
   callForAction: CallForActionProps | null;
+  haveSideBar?: boolean;
 }

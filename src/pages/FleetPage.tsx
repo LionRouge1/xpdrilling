@@ -78,15 +78,23 @@ const Fleet = () => {
     }
   ];
   return (
-  <>
-    <PageBanner title="Fleet" image={BannerImg} />
-    <ContentForPage
-      pageOptions={pageOptions}
-      postBanner={postBanner}
-      pageUrl="/fleet"
-      callForAction={null}
-    />
-  </>
-);};
+    <>
+      <PageBanner
+        title="Fleet Overview"
+        sousTitle="Our Advanced Drilling Fleet"
+        image={BannerImg}
+      />
+      <main className="fleet-page">
+        <ContentForPage
+          pageOptions={pageOptions}
+          postBanner={postBanner}
+          page={{title: 'Our Fleet', url:'/fleet'}}
+          callForAction={null}
+          haveSideBar={true}
+        />
+      </main>
+    </>
+  );
+};
 
 export default Fleet;

@@ -1,16 +1,16 @@
 import PageBanner from "../components/PageBanner";
 import BannerImg from '../assets/about_us.jpg';
-import sustain1 from '../assets/subility-01.jpg'
+// import sustain1 from '../assets/subility-01.jpg'
 import sustain2 from '../assets/subility-02.jpg'
 import sustain3 from '../assets/subility-03.jpg'
 import sustain4 from '../assets/subility-04.jpg'
 import getInTouch from '../assets/get-in-touch.jpg'
 import ContentForPage from "./ContentForPage";
 
-const SustainabilityPage = () => { 
+const SustainabilityPage = () => {
   const postBanner = {
-    title: 'Precision Drilling Solutions Tailored to Your Needs',
-    image: sustain1,
+    title: 'Overview of Our Commitment to ESG Principles',
+    image: '',
     description: ["At XP Drilling Services, we recognize that our responsibilities extend beyond drilling holes and delivering results. We are deeply committed to the principles of Environmental, Social, and Governance (ESG), which guide our actions and decisions in a way that positively impacts not only our stakeholders but also the planet and the communities in which we operate."],
   };
 
@@ -64,15 +64,24 @@ const SustainabilityPage = () => {
     butonText: 'Contact Us'
   }
   return (
-  <>
-    <PageBanner title="Sustainability" image={BannerImg} />
-    <ContentForPage
-      postBanner={postBanner}
-      pageOptions={pageOptions}
-      pageUrl='/sustainability'
-      callForAction={callForAction}
-    />
-  </>
-)};
+    <>
+      <PageBanner
+        title="Sustainability"
+        sousTitle="Our Commitment to a Sustainable Future"
+        image={BannerImg}
+      />
+      <main className="sustainability-page">
+        <ContentForPage
+          postBanner={postBanner}
+          pageOptions={pageOptions}
+          page={{title: 'Our Sustainability', url:'/sustainability'}}
+          callForAction={callForAction}
+          haveSideBar={true}
+        />
+      </main>
+
+    </>
+  )
+};
 
 export default SustainabilityPage;

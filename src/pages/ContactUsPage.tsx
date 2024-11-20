@@ -5,7 +5,11 @@ import '../styles/contactus.scss';
 
 const AboutUsPage = () => (
   <>
-    <PageBanner title="Contact Us" image={BannerImg} />
+    <PageBanner
+      title="Contact Us"
+      sousTitle="Get in touch with us"
+      image={BannerImg}
+    />
     <main>
       <ContactUs />
       <section className="google-map">

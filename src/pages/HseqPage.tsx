@@ -7,7 +7,7 @@ import joinUs from '../assets/join-us.jpg';
 
 const HseqPage = () => {
   const postBanner = {
-    title: 'Precision Drilling Solutions Tailored to Your Needs',
+    title: 'Our Commitment to HSEQ Excellence',
     image: hseq1,
     description: ["At XP Drilling Services, our top priority is the well-being of our employees, clients, communities, and the environment. We are committed to upholding the highest standards in Health, Safety, Environment, and Quality (HSEQ) throughout all of our drilling operations."]
   };
@@ -63,7 +63,7 @@ const HseqPage = () => {
 
   const callForaction = {
     title: 'Our Commitment to Continuous Improvement',
-    description: ["At XP Drilling Services, we are committed to continuously improving our HSEQ practices. By fostering a culture of excellence and accountability, we ensure that every project is completed with the highest regard for safety, environmental stewardship, and quality.", 
+    description: ["At XP Drilling Services, we are committed to continuously improving our HSEQ practices. By fostering a culture of excellence and accountability, we ensure that every project is completed with the highest regard for safety, environmental stewardship, and quality.",
       "If you would like to learn more about our HSEQ framework or how we can help meet your specific project requirements, please don’t hesitate to get in touch."
     ],
     image: joinUs,
@@ -71,13 +71,19 @@ const HseqPage = () => {
   }
   return (
     <>
-      <PageBanner title="HSEQ" image={BannerImg} />
-      <ContentForPage
-        postBanner={postBanner}
-        pageOptions={pageOptions}
-        pageUrl='/hseq'
-        callForAction={callForaction}
+      <PageBanner
+        title="HSEQ"
+        sousTitle="Health, Safety, Environment, and Quality"
+        image={BannerImg}
       />
+      <main className="hseq-page">
+        <ContentForPage
+          postBanner={postBanner}
+          pageOptions={pageOptions}
+          page={{title: 'Our HSEQ', url:'/hseq'}}
+          callForAction={callForaction}
+        />
+      </main>
     </>
   );
 }

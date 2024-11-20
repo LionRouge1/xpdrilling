@@ -45,13 +45,20 @@ const Services = () => {
   }
   return (
     <>
-      <PageBanner title="Services" image={BannerImg} />
-      <ContentForPage
-        postBanner={postBanner}
-        pageOptions={pageOpations}
-        pageUrl="/services"
-        callForAction={callForAction}
+      <PageBanner
+        title="Our Services"
+        sousTitle="Precision Drilling Solutions Tailored to Your Needs"
+        image={BannerImg}
       />
+      <main className="services-page">
+        <ContentForPage
+          postBanner={postBanner}
+          pageOptions={pageOpations}
+          page={{title: 'Our Services', url:'/services'}}
+          callForAction={callForAction}
+          haveSideBar={false}
+        />
+      </main>
     </>
   )
 };

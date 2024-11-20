@@ -9,8 +9,9 @@ import '../styles/contentforpage.scss';
 const ContentForPage = ({
   postBanner,
   pageOptions,
-  pageUrl,
-  callForAction
+  page,
+  callForAction,
+  haveSideBar
 }: ContentPageProps) => {
 
   const serialized = (text: string) => (
@@ -21,10 +22,14 @@ const ContentForPage = ({
     option.title
   ))
   return (
-    <main>
-      <section className="post-banner">
-        <div className="post-banner-image" style={{ backgroundImage: `url(${postBanner.image})` }}></div>
-        <div className="post-banner-content">
+    <>
+      <section className={postBanner.image? 'horizontal-banner' : 'vertical-banner'}>
+        {
+          postBanner.image? (
+            <div className='horizontal-banner-image' style={{ backgroundImage: `url(${postBanner.image})` }}></div>
+          ) : null
+        }
+        <div className={postBanner.image? 'horizontal-banner-content' : 'vertical-banner-content'}>
           <h2>{postBanner.title}</h2>
           {
             postBanner.description.map((desc, index) => (
@@ -32,54 +37,58 @@ const ContentForPage = ({
             ))
           }
         </div>
-        <div className="cover"></div>
       </section>
 
-      <section className="page-content">
-        <section className="page-options">
+      <section className={`${postBanner.image? 'page-content-horizontal' : 'page-content-vertical'} ${haveSideBar || 'no-side-bar'}`}>
+        <section className={postBanner.image? 'page-options': 'vertical-options'}>
           {pageOptions.map((pageOpation, index) => (
             <PageOption key={index} {...pageOpation} />
           ))}
         </section>
-        <section className="side-bar">
-          <article className="side-bar-navigation">
-            <ul>
-              {
-                navList.map((nav, index) => (
-                  <li key={index}>
-                    <a href={`${pageUrl}#${serialized(nav)}`}>
-                      {nav}
-                      <RiArrowRightSFill />
-                    </a>
-                  </li>
-                ))
-              }
-            </ul>
-          </article>
-          <article className="contact-us-box">
-            <h3>For an Inquiry</h3>
-            <img src="https://via.placeholder.com/150" alt="contact us" />
-            <h3>XP Drilling</h3>
-            <ul className="contact-info">
-              <li><FaLocationDot /> Los Angels Gournadi, 1230 Bariasl</li>
-              <li><a href="mailto:"><FaEnvelope />  info@xpdrilling.com</a></li>
-              <li><a href="tel:+233263119815"><FaPhoneVolume /> +233 (0) 26 311 9815</a></li>
-            </ul>
-            <a href="#" className="btn">Contact Us</a>
-          </article>
-        </section>
+        {
+          haveSideBar? (
+            <section className="side-bar">
+              <article className="side-bar-navigation">
+                <h3>{page.title}</h3>
+                <ul>
+                  {
+                    navList.map((nav, index) => (
+                      <li key={index}>
+                        <a href={`${page.url}#${serialized(nav)}`}>
+                          {nav}
+                          <RiArrowRightSFill />
+                        </a>
+                      </li>
+                    ))
+                  }
+                </ul>
+              </article>
+              <article className="contact-us-box">
+                <h3>For an Inquiry</h3>
+                <img src="https://via.placeholder.com/150" alt="contact us" />
+                <h3>XP Drilling</h3>
+                <ul className="contact-info">
+                  <li><FaLocationDot /> Los Angels Gournadi, 1230 Bariasl</li>
+                  <li><a href="mailto:"><FaEnvelope />  info@xpdrilling.com</a></li>
+                  <li><a href="tel:+233263119815"><FaPhoneVolume /> +233 (0) 26 311 9815</a></li>
+                </ul>
+                <a href="#" className="btn">Contact Us</a>
+              </article>
+            </section>
+          ) : null
+        }
       </section>
       {
-        callForAction? (
-        <CallForAction
-          title={callForAction.title}
-          description={callForAction.description}
-          butonText='Contact Us'
-          image={callForAction.image}
-        />
+        callForAction ? (
+          <CallForAction
+            title={callForAction.title}
+            description={callForAction.description}
+            butonText='Contact Us'
+            image={callForAction.image}
+          />
         ) : null
       }
-    </main>
+    </>
   );
 };
 

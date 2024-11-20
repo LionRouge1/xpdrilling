@@ -3,14 +3,20 @@ import BannerImg from '../assets/about_us.jpg';
 import WhyChooseUs from "../components/WhyChooseUs";
 import OurMission from "../components/OurMission";
 import CoreValues from "../components/CoreValues";
+import OurImpact from "../components/about/OurImpact";
 
 const AboutUsPage = () => (
   <>
-    <PageBanner title="About Us" image={BannerImg} />
+    <PageBanner
+      title="About Us"
+      image={BannerImg} 
+      sousTitle="Innovative Solutions, Trusted Expertise"
+    />
     <main>
       <WhyChooseUs />
       <OurMission />
       <CoreValues />
+      <OurImpact />
     </main>
   </>
 );

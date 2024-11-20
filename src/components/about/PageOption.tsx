@@ -4,7 +4,7 @@ import { MdOutlineCheckBox } from "react-icons/md";
 const PageOption = ({ title, image, description, lists }: PageOptionProps) => (
   <article className="page-option">
     <div className="page-option-content">
-      <h2>{title}</h2>
+      <h3>{title}</h3>
       {
         description.map((desc, index) => (
           <p key={index}>{desc}</p>
@@ -17,6 +17,9 @@ const PageOption = ({ title, image, description, lists }: PageOptionProps) => (
           ))
         }
       </ul>
+      <div className="contact-btn">
+        <a href="#" className="btn"></a>
+      </div>
     </div>
     <div className="page-option-image" style={{ backgroundImage: `url(${image})` }}>
     </div>
