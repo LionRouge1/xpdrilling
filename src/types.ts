@@ -45,3 +45,15 @@ export type ContentPageProps = {
   callForAction: CallForActionProps | null;
   haveSideBar?: boolean;
 }
+
+export type WehaveProps = {
+  title: string;
+  sousTitle: string;
+  description: string[];
+  image: any;
+  reasons: {
+    title: string;
+    image: any;
+    text: string;
+  }[];
+}

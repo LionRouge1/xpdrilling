@@ -1,5 +1,6 @@
 import { FC } from "react";
 import { CallForActionProps } from "../../types";
+import '../../styles/callforaction.scss';
 
 const CallForAction: FC<CallForActionProps> = ({ title, description, image, butonText }) => {
   return (

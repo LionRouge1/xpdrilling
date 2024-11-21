@@ -7,7 +7,7 @@ import ContentForPage from "./ContentForPage";
 
 const Fleet = () => {
   const postBanner = {
-    title: 'Precision Drilling Solutions Tailored to Your Needs',
+    title: 'Explore Our Fleet of Advanced Drilling Machines',
     image: fleet2,
     description: ["XP Drilling Services places a premium on cutting-edge equipment and technology. Our investment in modern rigs and advanced drilling technology showcases our dedication to precision and efficiency. We're committed to delivering the best-in-class services, even as a new player on the scene."],
   };
