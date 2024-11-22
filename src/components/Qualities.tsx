@@ -1,27 +1,32 @@
 import { useEffect } from 'react';
 import { FaPlus } from 'react-icons/fa';
+import RDrilling from '../assets/RDrilling';
+import EfProcesses from '../assets/EfProcesses';
+import SustPractices from '../assets/SustPractices';
+import TtedPartnerships from '../assets/TtedPartnerships';
 import '../styles/qualities.scss';
+
 
 const qualitiesObj = [
   {
     id: "01",
     title: "Reliable Drilling",
-    img: "service1.jpg"
+    img: RDrilling
   },
   {
     id: "02",
     title: "Efficient Processes",
-    img: "service2.jpg"
+    img: EfProcesses
   },
   {
     id: "03",
     title: "Sustainable Practices",
-    img: "service3.jpg"
+    img: SustPractices
   },
   {
     id: "04",
     title: "Trusted Partnerships",
-    img: "service4.jpg"
+    img: TtedPartnerships
   }
 ]
 
@@ -43,12 +48,12 @@ const Qualities = () => {
   return (
     <section className="qualities">
       <article className="qualities-container">
-        {qualitiesObj.map(({ id, img, title }) => (
-          <div key={id} className={`quality ${(+id % 2 == 0) ? 'even' : ''} ${(+id == 1) ? 'active' : ''}`}>
-            <span className="quality-number">{id}</span>
+        {qualitiesObj.map((quality) => (
+          <div key={quality.id} className={`quality ${(+quality.id % 2 == 0) ? 'even' : ''} ${(+quality.id == 1) ? 'active' : ''}`}>
+            <span className="quality-number">{quality.id}</span>
             <div className="quality-content">
-              <img src={`../assets/${img}`} alt={title} />
-              <h3>{title}</h3>
+              <quality.img />
+              <h3>{quality.title}</h3>
             </div>
             <a href="/"><FaPlus /></a>
           </div>
