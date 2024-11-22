@@ -5,15 +5,11 @@ import sustain2 from '../assets/subility-02.jpg'
 import sustain3 from '../assets/subility-03.jpg'
 import sustain4 from '../assets/subility-04.jpg'
 import getInTouch from '../assets/get-in-touch.jpg'
-import ContentForPage from "./ContentForPage";
+import '../styles/sustainabilitypage.scss';
+import { RiCheckboxCircleFill } from "react-icons/ri"
+import CallForAction from "../components/about/CallForAction";
 
 const SustainabilityPage = () => {
-  const postBanner = {
-    title: 'Overview of Our Commitment to ESG Principles',
-    image: '',
-    description: ["At XP Drilling Services, we recognize that our responsibilities extend beyond drilling holes and delivering results. We are deeply committed to the principles of Environmental, Social, and Governance (ESG), which guide our actions and decisions in a way that positively impacts not only our stakeholders but also the planet and the communities in which we operate."],
-  };
-
   const pageOptions = [
     {
       title: 'Environmental Responsibility',
@@ -71,12 +67,46 @@ const SustainabilityPage = () => {
         image={BannerImg}
       />
       <main className="sustainability-page">
-        <ContentForPage
-          postBanner={postBanner}
-          pageOptions={pageOptions}
-          page={{title: 'Our Sustainability', url:'/sustainability'}}
-          callForAction={callForAction}
-          haveSideBar={true}
+        <section className="sustain-header">
+          <div className="image">
+            <img src={sustain2} alt="sustainability" />
+          </div>
+          <div className="content">
+            <p>
+              At XP Drilling Services, we recognize that our responsibilities extend beyond drilling holes and delivering results. 
+              We are deeply committed to the principles of Environmental, Social, and Governance (ESG), 
+              which guide our actions and decisions in a way that positively impacts not only our stakeholders 
+              but also the planet and the communities in which we operate.
+            </p>
+          </div>
+        </section>
+        <section className="subcards">
+          {
+            pageOptions.map((pageOption, index) => (
+              <div className="subcard" key={index}>
+                <p>
+                  {pageOption.description}
+                </p>
+                <div className="title-wrapper">
+                <h3 className="title">{pageOption.title}</h3>
+                </div>
+                <ul>
+                  {
+                    pageOption.lists.map((list, index) => (
+                      <li key={index}> <RiCheckboxCircleFill />
+                        {list}
+                      </li>
+                    ))}
+                </ul>
+              </div>
+            ))
+          }
+        </section>
+        <CallForAction
+          title={callForAction.title}
+          description={callForAction.description}
+          butonText='Contact Us'
+          image={callForAction.image}
         />
       </main>
 

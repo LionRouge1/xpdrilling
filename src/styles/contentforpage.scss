@@ -1,7 +1,7 @@
 .horizontal-banner {
   display: flex;
   flex-wrap: wrap;
-  padding: 40px 0;
+  // padding: 40px 0;
   gap: 5%;
   position: relative;
   justify-content: end;
@@ -10,12 +10,16 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    width: 40%;
+    width: 38%;
+    height: 400px;
+    border-radius: 10px;
   }
 
   &-content {
     width: 50%;
     font-size: 24px;
+    display: flex;
+    align-items: center;
 
     h2 {
       margin-bottom: 30px;
@@ -61,7 +65,7 @@
 .page-content-horizontal {
   display: grid;
   grid-template-columns: 28% 1fr;
-  gap: 2%;
+  gap: 4%;
 
   .page-options {
     order: 1;
@@ -74,7 +78,10 @@
       gap: 5%;
       margin-top: 50px;
       padding-bottom: 50px;
-      border-bottom: 1px solid #ccc;
+
+      .contact-btn {
+        display: none;
+      }
 
       &:nth-child(1) {
         margin-top: 0;
@@ -123,9 +130,34 @@
 
     .page-option:nth-child(even) {
       grid-template-columns: 1fr 55%;
+      border: 2px solid white;
+      background-color: var(--secondary-color);
+      color: white;
+      border-radius: 10px;
+      padding: 20px;
+
+      h3 {
+        color: white;
+      }
+
+      .page-option-image {
+        border-radius: 10px 0 0 10px;
+      }
+
 
       .page-option-content {
         order: 1;
+      }
+    }
+
+    .page-option:nth-child(odd) {
+      grid-template-columns: 55% 1fr;
+      padding: 20px;
+      background-color: var(--white-color);
+      border-radius: 10px;
+
+      .page-option-image {
+        border-radius: 0 10px 10px 0;
       }
     }
   }
@@ -214,7 +246,10 @@
 
 .side-bar {
   width: 100%;
-  margin-top: 0;
+  background-color: var(--white-color);
+  height: fit-content;
+  // padding: 20px;
+  // margin-top: 0;
 
   article:nth-child(1) {
     background-color: white;
@@ -249,9 +284,10 @@
     margin-top: 40px;
     padding: 20px;
     background-color: #fff;
+    color: white;
     border-radius: 5px;
     text-align: center;
-    background: linear-gradient(120deg, var(--global-color), var(--white-color) 50%, var(--global-color));
+    background: linear-gradient(120deg, var(--global-color), var(--secondary-color) 0%, var(--global-color));
 
     img {
       width: 100px;
@@ -273,8 +309,26 @@
       margin: 5px 0;
 
       a {
-        color: var(--secondary-color);
+        color: var(--white-color);
         text-decoration: none;
+      }
+    }
+
+    .btn {
+      color: black;
+      background-color: var(--white-color);
+
+      &::before {
+        background-color: black;
+      }
+
+      &:hover {
+        background-color: var(--secondary-color);
+        color: var(--white-color);
+
+        &::before {
+          background-color: var(--white-color);
+        }
       }
     }
   }

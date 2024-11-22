@@ -1,4 +1,7 @@
 .why-choose-us {
+  margin-top: 0;
+  padding-top: 30px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
+
+  width: 60%;
 }

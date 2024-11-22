@@ -11,7 +11,7 @@ const ContentForPage = ({
   pageOptions,
   page,
   callForAction,
-  haveSideBar
+  have
 }: ContentPageProps) => {
 
   const serialized = (text: string) => (
@@ -23,14 +23,14 @@ const ContentForPage = ({
   ))
   return (
     <>
-      <section className={postBanner.image? 'horizontal-banner' : 'vertical-banner'}>
+      <section className={have.horizontalBar? 'horizontal-banner' : 'vertical-banner'}>
         {
-          postBanner.image? (
+          have.horizontalBar? (
             <div className='horizontal-banner-image' style={{ backgroundImage: `url(${postBanner.image})` }}></div>
           ) : null
         }
-        <div className={postBanner.image? 'horizontal-banner-content' : 'vertical-banner-content'}>
-          <h2>{postBanner.title}</h2>
+        <div className={have.horizontalBar? 'horizontal-banner-content' : 'vertical-banner-content'}>
+          {/* <h2>{postBanner.title}</h2> */}
           {
             postBanner.description.map((desc, index) => (
               <p key={index}>{desc}</p>
@@ -39,14 +39,14 @@ const ContentForPage = ({
         </div>
       </section>
 
-      <section className={`${postBanner.image? 'page-content-horizontal' : 'page-content-vertical'} ${haveSideBar || 'no-side-bar'}`}>
-        <section className={postBanner.image? 'page-options': 'vertical-options'}>
+      <section className={`${have.horizontalBar? 'page-content-horizontal' : 'page-content-vertical'} ${have.sideBar || 'no-side-bar'}`}>
+        <section className={have.horizontalBar? 'page-options': 'vertical-options'}>
           {pageOptions.map((pageOpation, index) => (
             <PageOption key={index} {...pageOpation} />
           ))}
         </section>
         {
-          haveSideBar? (
+          have.sideBar? (
             <section className="side-bar">
               <article className="side-bar-navigation">
                 <h3>{page.title}</h3>

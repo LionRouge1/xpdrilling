@@ -12,7 +12,7 @@ const AboutUsPage = () => (
       image={BannerImg} 
       sousTitle="Innovative Solutions, Trusted Expertise"
     />
-    <main>
+    <main style={{backgroundColor: 'white'}}>
       <WhyChooseUs />
       <OurMission />
       <CoreValues />

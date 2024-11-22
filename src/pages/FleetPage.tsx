@@ -90,7 +90,7 @@ const Fleet = () => {
           postBanner={postBanner}
           page={{title: 'Our Fleet', url:'/fleet'}}
           callForAction={null}
-          haveSideBar={true}
+          have = {{sideBar: true, horizontalBar: true}}
         />
       </main>
     </>

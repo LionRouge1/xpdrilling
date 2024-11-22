@@ -8,7 +8,7 @@ import joinUs from '../assets/join-us.jpg';
 const HseqPage = () => {
   const postBanner = {
     title: 'Our Commitment to HSEQ Excellence',
-    image: hseq1,
+    image: '',
     description: ["At XP Drilling Services, our top priority is the well-being of our employees, clients, communities, and the environment. We are committed to upholding the highest standards in Health, Safety, Environment, and Quality (HSEQ) throughout all of our drilling operations."]
   };
 
@@ -82,6 +82,7 @@ const HseqPage = () => {
           pageOptions={pageOptions}
           page={{title: 'Our HSEQ', url:'/hseq'}}
           callForAction={callForaction}
+          have = {{sideBar: true, horizontalBar: false}}
         />
       </main>
     </>

@@ -73,6 +73,12 @@
         &:hover {
           color: var(--link-color-hover);
         }
+
+        &.active {
+          color: var(--link-color-hover);
+          font-size: 18px;
+          font-weight: bold;
+        }
       }
 
       .sous-menu {

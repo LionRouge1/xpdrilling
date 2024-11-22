@@ -43,7 +43,7 @@ export type ContentPageProps = {
   pageOptions: PageOptionProps[];
   page: {title: string, url: string};
   callForAction: CallForActionProps | null;
-  haveSideBar?: boolean;
+  have: {sideBar: boolean, horizontalBar: boolean}
 }
 
 export type WehaveProps = {
