@@ -48,7 +48,9 @@
 
 .vertical-banner {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
+  border-radius: 0 0 10px 10px;
+  background-color: var(--white-color);
+  color: black;
   margin-top: 0;
 
   &-content {
@@ -235,8 +237,16 @@
 
       &-image {
         height: 400px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        
       }
     }
+  }
+
+  .side-bar {
+    margin-top: 0;
   }
 }
 
