@@ -9,14 +9,14 @@ const Footer = () => {
       <section className="footer-container">
         <article>
           <img src={Logo} alt="Logo" />
-          <p>
+          {/* <p>
           We bring together innovation, expertise, and state-of-the-art technology to provide top-notch drilling solutions for your projects.
-          </p>
+          </p> */}
           <div className="contact-us">
             <MdOutlineWifiCalling />
             <div>
               <p>TALK TO OUR SUPPORT</p>
-              <a className="our-number">+233 (0) 26 311 9815</a>
+              <a className="our-number">+233 26 311 9815</a>
             </div>
           </div>
         </article>

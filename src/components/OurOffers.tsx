@@ -33,10 +33,10 @@ const OurOffers = () => (
         <li><MdOutlineCheckBox /> We are Committed</li>
         <li><MdOutlineCheckBox /> Full Satisfaction Guaran</li>               
       </ul>
-      <div className="offer-content-footer">
+      {/* <div className="offer-content-footer">
         <GiGreekTemple />
         <p>We’re in this business Since 1987 and we provide the best services</p>
-      </div>
+      </div> */}
     </div>
   </section>
 );
