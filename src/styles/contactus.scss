@@ -99,6 +99,14 @@
           background-color: var(--light-bg-color);
           color: #666;
         }
+
+        @media (max-width: 600px) {
+          flex-wrap: wrap;
+
+          .contact-input {
+            width: 100%;
+          }
+        }
       }
 
       textarea {
@@ -118,6 +126,16 @@
         width: 240px;
       }
     }
+
+    @media (max-width: 600px) {
+      padding: 30px;
+    }
+  }
+
+  @media (max-width: 900px) {
+    grid-template-columns: auto;
+    gap: 5%;
+    place-items: center;
   }
 }
 

@@ -159,19 +159,19 @@ section h2 {
   }
 }
 
-.page-option:nth-child(odd) {
-  transform: translateX(-100%);
-  opacity: 0;
-}
+// .page-option:nth-child(odd) {
+//   // transform: translateX(-100%);
+//   opacity: 0;
+// }
 
-.page-option:nth-child(even) {
-  transform: translateX(100%);
-  opacity: 0;
-}
+// .page-option:nth-child(even) {
+//   // transform: translateX(100%);
+//   opacity: 0;
+// }
 
-.visible {
-  transform: translateX(0) !important;
-  opacity: 1 !important;
-  transition: all 3s ease !important;
-}
+// .visible {
+//   transform: translateX(0) !important;
+//   opacity: 1 !important;
+//   transition: all 3s ease !important;
+// }
 
