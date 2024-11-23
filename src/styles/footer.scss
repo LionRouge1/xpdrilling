@@ -117,4 +117,25 @@ footer {
       }
     }
   }
+
+  .subscribe {
+    display: flex;
+    width: 100%;
+
+    input {
+      width: 70%;
+      height: 40px;
+      padding: 10px;
+      border-radius: 10px 0 0 10px;
+      border: none;
+    }
+
+    button {
+      height: 40px;
+      background-color: var(--global-color);
+      color: white;
+      border: none;
+      border-radius: 0 10px 10px 0;
+    }
+  }
 }
