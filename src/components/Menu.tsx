@@ -4,19 +4,49 @@ import { MdArrowDropDown } from "react-icons/md";
 import XpLogo from '../assets/xp-logo.png';
 import '../styles/menu.scss';
 import { NavLink } from 'react-router-dom';
+import { useEffect } from 'react';
 
 const Menu = () => {
-
   const showMobileMenu = () => {
     const navContainer = document.querySelector('.nav-container');
     if (!navContainer?.classList.contains('overlay')) navContainer?.classList.add('overlay');
   }
 
   const hideMobileMenu = () => {
+    if(window.screen.width > 900 ) return
     const navContainer = document.querySelector('.nav-container');
     if (navContainer?.classList.contains('overlay')) navContainer?.classList.remove('overlay');
   }
 
+  const isHomePage = () => {
+    return window.location.pathname === '/'
+  }
+
+  useEffect(() => {
+    const navbar = document.querySelector('.navbar') as HTMLElement;
+    const size = isHomePage()? window.screen.height : 400;
+
+    const makeMenuFixed = (height:number) => {
+      if(
+        document.body.scrollTop > height || document.documentElement.scrollTop > height) {
+        navbar.style.position = 'sticky';
+        navbar.style.top = '0'
+      } else {
+        navbar.style.position = 'relative';
+        navbar.style.top = ''
+      }
+    }
+
+    document.addEventListener('onscroll', () => {
+      makeMenuFixed(size)
+    })
+
+    return (
+      document.removeEventListener('onscroll', () => {
+        makeMenuFixed(size)
+      })
+    );
+  }, []);
 
   return (
     <nav className="navbar">
@@ -26,28 +56,28 @@ const Menu = () => {
           <div onClick={hideMobileMenu} className="close-btn">
             <SlClose />
           </div>
-          <li>
+          <li onClick={hideMobileMenu}>
             <NavLink to="/">Home</NavLink>
           </li>
           <li>
             <NavLink to="about-us">About Us <MdArrowDropDown /></NavLink>
             <ul className="sous-menu">
-              <li><NavLink to="about-us">About Us</NavLink></li>
-              <li><NavLink to="our-team">Our Team Members</NavLink></li>
-              <li><a href="#">FAQ</a></li>
+              <li onClick={hideMobileMenu}><NavLink to="about-us">About Us</NavLink></li>
+              <li onClick={hideMobileMenu}><NavLink to="our-team">Our Team Members</NavLink></li>
+              <li onClick={hideMobileMenu}><a href="#">FAQ</a></li>
             </ul>
           </li>
-          <li>
+          <li onClick={hideMobileMenu}>
             <NavLink to="services">Services</NavLink>
           </li>
-          <li>
+          <li onClick={hideMobileMenu}>
             <NavLink to="fleet">Fleet</NavLink>
           </li>
-          <li><NavLink to="hseq">HSEQ</NavLink></li>
-          <li>
+          <li onClick={hideMobileMenu}><NavLink to="hseq">HSEQ</NavLink></li>
+          <li onClick={hideMobileMenu}>
             <NavLink to="sustainability">Sustainability</NavLink>
           </li>
-          <li>
+          <li onClick={hideMobileMenu}>
             <NavLink to="contact-us">Contact Us </NavLink>
           </li>
         </ul>

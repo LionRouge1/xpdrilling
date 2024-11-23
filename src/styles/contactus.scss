@@ -1,3 +1,126 @@
+.contact-us {
+  display: grid;
+  grid-template-columns: 38% 62%;
+
+  .contact-info {
+    display: grid;
+    gap: 50px;
+    margin-top: 50px;
+
+    .contacts {
+      display: grid;
+      gap: 30px;
+
+      li {
+        display: flex;
+        gap: 20px;
+        list-style: none;
+
+        h3 {
+          font-size: 20px;
+          color: var(--secondary-color);
+        }
+
+        svg {
+          transform: translateY(15px);
+          font-size: 3rem;
+          color: var(--global-color);
+        }
+      }
+    }
+
+    .social-media {
+      display: flex;
+      // justify-content: space-around;
+      place-items: center;
+      gap: 20px;
+      // margin-bottom: -8px;
+      // width: 10rem;
+
+      li {
+        list-style: none;
+
+        a {
+          font-size: 15px;
+          display: inline-block;
+          width: 50px;
+          height: 50px;
+          text-decoration: none;
+          color: var(--secondary-color);
+          background-color: var(--white-color);
+          padding: 15px;
+    
+          &:hover {
+            color: var(--white-color);
+            background-color: var(--link-color-hover);
+          }
+        }
+    
+        @media (max-width: 840px) {
+          gap: 5px;
+        }
+      }
+    }
+  }
+
+  .contact-form {
+    padding: 60px;
+    background-color: var(--white-color);
+
+    h2 {
+      font-size: 30px;
+      color: var(--secondary-color);
+    }
+
+    form {
+      width: 100%;
+
+      div {
+        display: flex;
+        justify-content: space-between;
+
+        .contact-input {
+          width: 48%;
+          height: 50px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 20px;
+          background-color: var(--light-bg-color);
+          padding-right: 10px;
+        }
+
+        input, select {
+          width: 100%;
+          height: 50px;
+          padding: 0 20px;
+          outline: none;
+          border: none;
+          background-color: var(--light-bg-color);
+          color: #666;
+        }
+      }
+
+      textarea {
+        width: 100%;
+        height: 150px;
+        padding: 20px;
+        outline: none;
+        border: none;
+        background-color: var(--light-bg-color);
+        color: #666;
+        margin-bottom: 20px;
+      }
+
+      .btn {
+        border: none;
+        outline: none;
+        width: 240px;
+      }
+    }
+  }
+}
+
 .google-map {
   width: 100%;
   margin: 0;

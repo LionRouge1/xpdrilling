@@ -3,7 +3,7 @@ import BannerImg from '../assets/about_us.jpg';
 import ContentForPage from "./ContentForPage";
 import hseq1 from '../assets/heq.jpg';
 import hseq2 from '../assets/hseq-01.jpg';
-import joinUs from '../assets/join-us.jpg';
+import joinUs from '../assets/vision.jpg';
 
 const HseqPage = () => {
   const postBanner = {

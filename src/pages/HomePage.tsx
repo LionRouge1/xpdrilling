@@ -1,9 +1,11 @@
+import { useContext, useEffect } from "react";
 import Home from "../components/Home";
 import Qualities from "../components/Qualities";
 import OurOffers from "../components/OurOffers";
 import OurServices from "../components/OurServices";
 import WeHave from "../components/WeHave";
 import GetInTouch from "../components/GetInTouch";
+import { SizeContext } from "../components/context/SizeContext";
 import { GiClassicalKnowledge, GiSpinningTop } from "react-icons/gi";
 import { MdHealthAndSafety } from "react-icons/md";
 import { RiFocus3Fill } from "react-icons/ri";
@@ -38,7 +40,14 @@ const content = {
   ]
 };
 
-const HomePage = () => (
+const HomePage = () => {
+  const { size, setSize} = useContext(SizeContext);
+  setSize(window.screen.height)
+
+  // useEffect(() => {
+  //   setSize(window.screen.height)
+  // }, [size]);
+  return (
   <>
     <Home />
     <main>
@@ -49,6 +58,6 @@ const HomePage = () => (
       <GetInTouch />
     </main>
   </>
-);
+)};
 
 export default HomePage;
