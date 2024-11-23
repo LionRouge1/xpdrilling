@@ -102,4 +102,38 @@
       width: 300px;
     }
   }
+
+  @media (max-width: 750px) {
+    place-items: center;
+
+    .values {
+      width: 100%;
+      display: grid;
+      place-items: center;
+      gap: 30px;
+
+      &::before {
+        left: 5%;
+      }
+
+      .square {
+        left: calc(5% - 10px);
+      }
+
+      .value {
+        transform: translate(0);
+        width: 80%;
+
+        &-label {
+          left: -12% !important;
+          right: auto !important;
+
+          @media (max-width: 400px) {
+            font-size: 15px;
+            padding: 0 5px;
+          }
+        }
+      }
+    }
+  }
 }
