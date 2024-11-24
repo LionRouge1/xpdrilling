@@ -56,4 +56,11 @@ export type WehaveProps = {
     image: any;
     text: string;
   }[];
+};
+
+export type HseqProps = {
+  title: string;
+  image: any;
+  description: string[];
+  lists: any;
 }
