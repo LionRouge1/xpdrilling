@@ -1,4 +1,3 @@
-import { useContext, useEffect } from "react";
 import Home from "../components/Home";
 import Qualities from "../components/Qualities";
 import OurOffers from "../components/OurOffers";

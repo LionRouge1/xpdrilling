@@ -2,7 +2,6 @@ import { MdOutlineWifiCalling } from "react-icons/md";
 import { FaFacebookSquare, FaTwitter, FaInstagram, FaYoutube, FaEnvelope } from 'react-icons/fa';
 import Logo from '../assets/xp-logo2.png';
 import '../styles/footer.scss'
-import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (

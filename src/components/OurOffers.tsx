@@ -1,5 +1,4 @@
 import { MdOutlineCheckBox } from "react-icons/md";
-import { GiGreekTemple } from "react-icons/gi";
 import Offer1 from '../assets/offer1.jpg';
 import Offer2 from '../assets/offer2.jpg';
 import '../styles/ouroffers.scss';
@@ -31,10 +30,6 @@ const OurOffers = () => (
         <li><MdOutlineCheckBox /> Experienced team</li>
         <li><MdOutlineCheckBox /> Full Satisfaction Guaranteed</li>               
       </ul>
-      {/* <div className="offer-content-footer">
-        <GiGreekTemple />
-        <p>We’re in this business Since 1987 and we provide the best services</p>
-      </div> */}
     </div>
   </section>
 );
