@@ -1,5 +1,7 @@
 import { useEffect } from 'react';
 import '../styles/ourmission.scss';
+import vision from '../assets/our_vision.png';
+import mission from '../assets/our_mission.png';
 
 const OurMission = () => {
 
@@ -32,10 +34,16 @@ const OurMission = () => {
   return (
     <section className="our-mission">
       <div className="our-mission-content active">
+        <div className="icon-box">
+          <img src={mission} alt="Our Mission" />
+        </div>
         <h4>Our Mission</h4>
         <p>Our mission is to empower the mining industry by providing tailored, high-quality drilling solutions. We invest in cutting-edge technology and uphold the highest standards of safety, while fostering a culture of continuous improvement and professionalism, to build lasting, transparent partnerships.</p>
       </div>
       <div className="our-mission-content">
+        <div className="icon-box">
+          <img src={vision} alt="Our Vision" />
+        </div>
         <h4>Our Vision</h4>
         <p>Our vision is to be the premier drilling solutions provider, setting industry benchmarks through innovation, sustainability, and unwavering dedication to our clients' success. We aim to be recognized globally for our expertise, safety, and responsible exploration practices.</p>
       </div>
