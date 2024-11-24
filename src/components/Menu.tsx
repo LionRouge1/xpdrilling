@@ -1,7 +1,7 @@
 import { RxHamburgerMenu } from 'react-icons/rx';
 import { SlClose } from "react-icons/sl";
 import { MdArrowDropDown } from "react-icons/md";
-import XpLogo from '../assets/xp-logo.png';
+import XpLogo from '../assets/logo.png';
 import '../styles/menu.scss';
 import { NavLink } from 'react-router-dom';
 import { useEffect } from 'react';
@@ -37,12 +37,12 @@ const Menu = () => {
       }
     }
 
-    document.addEventListener('onscroll', () => {
+    document.addEventListener('scroll', () => {
       makeMenuFixed(size)
     })
 
     return (
-      document.removeEventListener('onscroll', () => {
+      document.removeEventListener('scroll', () => {
         makeMenuFixed(size)
       })
     );
