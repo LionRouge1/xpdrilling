@@ -68,9 +68,9 @@ const ContentForPage = ({
                 <img src="https://via.placeholder.com/150" alt="contact us" />
                 <h3>XP Drilling</h3>
                 <ul className="contact-info">
-                  <li><FaLocationDot /> Los Angels Gournadi, 1230 Bariasl</li>
-                  <li><a href="mailto:"><FaEnvelope />  info@xpdrilling.com</a></li>
-                  <li><a href="tel:+233263119815"><FaPhoneVolume /> +233 (0) 26 311 9815</a></li>
+                  <li><FaLocationDot /> P.O.Box KS 17355, Adum-Kumasi, Ghana</li>
+                  <li><a href="mailto:info@xpdrilling.com"><FaEnvelope />  info@xpdrilling.com</a></li>
+                  <li><a href="tel:+233241214994"><FaPhoneVolume /> +233-241-214994</a></li>
                 </ul>
                 <a href="#" className="btn">Contact Us</a>
               </article>

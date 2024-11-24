@@ -3,7 +3,7 @@ import { GrMapLocation } from "react-icons/gr";
 import { LuPhoneCall } from "react-icons/lu";
 import { LiaEnvelopeOpenTextSolid } from "react-icons/lia";
 import { CgUser } from "react-icons/cg";
-import { FaMapMarkerAlt, FaPhoneAlt, FaRegEnvelope, FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn, FaFacebookSquare, FaYoutube } from "react-icons/fa";
+import { FaPhoneAlt, FaRegEnvelope, FaTwitter, FaInstagram, FaFacebookSquare, FaYoutube } from "react-icons/fa";
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({
@@ -41,21 +41,21 @@ const ContactPage = () => {
             <GrMapLocation />
             <div>
               <h3>Our Location</h3>
-              <p>456, Lorem Street, New York, 33454</p>
+              <p>P.O.Box KS 17355, Adum-Kumasi, Ghana</p>
             </div>
           </li>
           <li>
             <LuPhoneCall />
             <div>
               <h3>Phone Number</h3>
-              <p>+1 (800) 123 456 789</p>
+              <a href="tel:+233241214994">+233-241-214994</a>
             </div>
           </li>
           <li>
             <LiaEnvelopeOpenTextSolid />
             <div>
               <h3>Email Address</h3>
-              <p>info@xpdrilling.com</p>
+              <a href="mailto:ifo@xpdrilling.com">info@xpdrilling.com</a>
             </div>
           </li>
         </ul>

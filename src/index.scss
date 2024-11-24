@@ -2,7 +2,7 @@
 
 :root {
   --global-text-color: #666;
-  --icon-color: #dd042b;
+  --icon-color: #ceaa52;
   --global-color: #ceaa52;
   --secondary-color: #19232b;
   --gradient-color-first: #ceaa52;
@@ -90,6 +90,7 @@ main {
 section h4 {
   letter-spacing: 3px;
   font-size: 15px;
+  height: 45px;
   padding-bottom: 20px;
   position: relative;
   width: fit-content;
@@ -143,8 +144,8 @@ section h2 {
   position: absolute;
   content: '';
   width: 35px;
-  height: 1px;
-  right: 45px;
+  height: 2px;
+  right: 5%;
   top: 50%;
   background-color: var(--white-color);
 
@@ -156,8 +157,8 @@ section h2 {
 .btn::after {
   position: absolute;
   content: ">";
-  top: 28%;
-  right: 43px;
+  top: 30%;
+  right: 5%;
   font-size: 15px;
   line-height: 25px;
   font-weight: bold;

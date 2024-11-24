@@ -29,9 +29,7 @@ const OurOffers = () => (
         <li><MdOutlineCheckBox /> Trusted and recommended</li>
         <li><MdOutlineCheckBox /> State-of-the-art equipment</li>
         <li><MdOutlineCheckBox /> Experienced team</li>
-        <li><MdOutlineCheckBox /> Highly Rated & Esteemed</li>
-        <li><MdOutlineCheckBox /> We are Committed</li>
-        <li><MdOutlineCheckBox /> Full Satisfaction Guaran</li>               
+        <li><MdOutlineCheckBox /> Full Satisfaction Guaranteed</li>               
       </ul>
       {/* <div className="offer-content-footer">
         <GiGreekTemple />

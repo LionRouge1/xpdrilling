@@ -60,13 +60,13 @@ const Menu = () => {
             <NavLink to="/">Home</NavLink>
           </li>
           <li>
-            <NavLink to="about-us">About Us <MdArrowDropDown /></NavLink>
+            About Us <MdArrowDropDown />
             <ul className="sous-menu">
-              <li onClick={hideMobileMenu}><NavLink to="about-us">About Us</NavLink></li>
+              <li><NavLink to="about-us">About Us</NavLink></li>
               <li onClick={hideMobileMenu}><NavLink to="our-team">Our Team Members</NavLink></li>
-              <li onClick={hideMobileMenu}><a href="#">FAQ</a></li>
             </ul>
           </li>
+          
           <li onClick={hideMobileMenu}>
             <NavLink to="services">Services</NavLink>
           </li>
@@ -83,7 +83,7 @@ const Menu = () => {
         </ul>
       </div>
       <a href="#" className="inqurey-btn">
-        <span className="inquery-txt">INQUERY</span>
+        INQUERY
       </a>
       <div onClick={showMobileMenu} className="mobile-menu">
         <RxHamburgerMenu />
