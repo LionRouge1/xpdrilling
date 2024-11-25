@@ -44,4 +44,19 @@
       width: 100%;
     }
   }
+
+  @media (max-width: 600px) {
+    h4 {
+      letter-spacing: 0;
+      // margin-bottom: 20px;
+    }
+  }
+
+  @media (max-width: 450px) {
+    h4 {
+      // letter-spacing: 0;
+      font-size: 12px;
+      // margin-bottom: 20px;
+    }
+  }
 }

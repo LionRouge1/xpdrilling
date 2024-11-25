@@ -15,6 +15,7 @@
     font-size: 30px;
     margin-left: -70px;
     margin-bottom: 20px;
+    line-height: 1;
     position: relative;
 
     &::before {
@@ -92,14 +93,14 @@
     }
   }
 
-  @media (max-width: 500px) {
+  @media (max-width: 600px) {
     // margin-left: -40px;
     h2 {
       width: 80%;
     }
 
     p {
-      width: 80%;
+      width: 100%;
     }
   }
 
@@ -109,10 +110,6 @@
       width: 100%;
       margin: 0;
       margin-bottom: 20px;
-    }
-
-    p {
-      width: 100%;
     }
     
     .hseqs {
@@ -171,6 +168,10 @@
       background-color: var(--global-color);
       z-index: -1;
       transform: skewX(-15deg);
+    }
+
+    @media (max-width: 600px) {
+      font-size: 20px;
     }
   }
 
@@ -231,11 +232,11 @@
     }
   }
 
-  @media (max-width: 500px) {
+  @media (max-width: 600px) {
     // margin-left: -40px;
 
     p {
-      width: 80%;
+      width: 100%;
     }
   }
 
@@ -243,11 +244,7 @@
     // margin-left: -40px;
     h2 {
       width: 100%;
-      // margin: 0;
-      height: auto;
-    }
-    p {
-      width: 100%;
+      line-height: 1.5;
     }
   }
 }

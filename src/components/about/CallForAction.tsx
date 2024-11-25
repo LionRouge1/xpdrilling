@@ -1,6 +1,7 @@
 import { FC } from "react";
 import { CallForActionProps } from "../../types";
 import '../../styles/callforaction.scss';
+import { Link } from "react-router-dom";
 
 const CallForAction: FC<CallForActionProps> = ({ title, description, image, butonText }) => {
   return (
@@ -11,7 +12,7 @@ const CallForAction: FC<CallForActionProps> = ({ title, description, image, buto
           <p key={index}>{desc}</p>
         ))
       }
-      <a href="#" className="btn">{butonText}</a>
+      <Link to="/contact-us" className="btn">{butonText}</Link>
     </section>
   )
 };

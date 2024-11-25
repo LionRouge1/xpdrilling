@@ -4,6 +4,11 @@ import { MdOutlineCheckBox } from "react-icons/md";
 
 const PageOption = ({ title, image, description, lists }: PageOptionProps) => {
   const elementRef = useRef<HTMLElement>(null);
+
+  const serialized = (text: string) => (
+    text.trim().replace(/\s/g, '-').toLowerCase()
+  );
+
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
@@ -24,6 +29,7 @@ const PageOption = ({ title, image, description, lists }: PageOptionProps) => {
   <article
     ref={elementRef}
     className="page-option"
+    id={serialized(title)}
   >
     <div className="page-option-content">
       <h3>{title}</h3>

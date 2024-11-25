@@ -14,6 +14,7 @@ import WeHave from "../components/WeHave";
 import { WehaveProps } from "../types";
 import CallForAction from "../components/about/CallForAction";
 import '../styles/servicespage.scss';
+import { useEffect } from "react";
 
 const contents = [
   {
@@ -82,6 +83,17 @@ const Services = () => {
     image: actionImage,
     butonText: 'Contact Us'
   }
+
+  // console.log(document.location.pathname, document.location.hash)
+  useEffect(() => {
+    const anchor = document.location.hash.slice(1);
+    console.log(anchor);
+    if(anchor) {
+      const element = document.getElementById(anchor);
+      console.log(element);
+      element?.scrollIntoView()
+    }
+  }, []);
 
   return (
     <>

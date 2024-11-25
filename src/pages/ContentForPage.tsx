@@ -5,6 +5,7 @@ import { FaLocationDot, FaEnvelope } from 'react-icons/fa6';
 import { RiArrowRightSFill } from "react-icons/ri";
 import CallForAction from "../components/about/CallForAction";
 import '../styles/contentforpage.scss';
+import { useEffect } from "react";
 
 const ContentForPage = ({
   postBanner,
@@ -15,12 +16,23 @@ const ContentForPage = ({
 }: ContentPageProps) => {
 
   const serialized = (text: string) => (
-    text.trim().replace(/\s/g, '-')
+    text.trim().replace(/\s/g, '-').toLowerCase()
   );
 
   const navList = pageOptions.map((option) => (
     option.title
   ))
+
+  useEffect(() => {
+    const anchor = document.location.hash.slice(1);
+    console.log(anchor);
+    if(anchor) {
+      const element = document.getElementById(anchor);
+      console.log(element);
+      element?.scrollIntoView()
+    }
+  }, []);
+
   return (
     <>
       <section className={have.horizontalBar? 'horizontal-banner' : 'vertical-banner'}>

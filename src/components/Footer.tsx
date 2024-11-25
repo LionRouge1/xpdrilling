@@ -40,8 +40,8 @@ const Footer = () => {
         <article>
           <h3>Solution & Services</h3>
           <ul>
-            <li><a href="/services">Diamond Drilling Services</a></li>
-            <li><a href="/services">Reverse Circulation Techniques</a></li>
+            <li><a href="/services#diamond-drilling-services">Diamond Drilling Services</a></li>
+            <li><a href="/services#reverse-circulation-drilling">Reverse Circulation Techniques</a></li>
             <li><a href="/fleet">Fleet</a></li>
           </ul>
         </article>

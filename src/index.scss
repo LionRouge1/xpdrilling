@@ -54,6 +54,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Yantramanav', sans-serif;
   font-size: 18px;

@@ -4,8 +4,13 @@ import { WehaveProps } from "../types";
 
 const WeHave: FC<{content: WehaveProps}> = ({content}) => {
   const { title, sousTitle, description, image, reasons } = content;
+
+  const serialized = (text: string) => (
+    text.trim().replace(/\s/g, '-').toLowerCase()
+  );
+
   return (
-  <section className="we-have" style={{backgroundImage: `url(${image})`}}>
+  <section className="we-have" id={serialized(sousTitle)} style={{backgroundImage: `url(${image})`}}>
     {
       title && <h4>{title}</h4>
     }
