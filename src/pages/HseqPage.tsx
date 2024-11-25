@@ -1,8 +1,6 @@
 import PageBanner from "../components/PageBanner";
 import BannerImg from '../assets/about_us.jpg';
-import ContentForPage from "./ContentForPage";
 import hseq1 from '../assets/heq.jpg';
-import hseq2 from '../assets/hseq-01.jpg';
 import joinUs from '../assets/vision.jpg';
 import HSEQ from "../components/Hseq";
 import CallForAction from "../components/about/CallForAction";
@@ -106,15 +104,6 @@ const HseqPage = () => {
           butonText='Contact Us'
           image={callForaction.image}
         />
-
-
-        {/* <ContentForPage
-          postBanner={postBanner}
-          pageOptions={pageOptions}
-          page={{title: 'Our HSEQ', url:'/hseq'}}
-          callForAction={callForaction}
-          have = {{sideBar: true, horizontalBar: false}}
-        /> */}
       </main>
     </>
   );
