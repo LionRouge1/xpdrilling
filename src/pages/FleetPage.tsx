@@ -40,7 +40,7 @@ const Fleet = () => {
       ]
     },
     {
-      title: 'Underground coring drill',
+      title: 'Underground coring drill (LM 90)',
       description: ['LM 90'],
       image: mission,
       lists: [
@@ -65,7 +65,7 @@ const Fleet = () => {
       ]
     },
     {
-      title: 'Underground coring drill',
+      title: 'Underground coring drill (LM 110)',
       description: ['LM 110'],
       image: mission,
       lists: [

@@ -334,7 +334,7 @@
 .side-bar {
   width: 100%;
   background-color: var(--white-color);
-  height: fit-content;
+  // height: fit-content;
   // padding: 20px;
   // margin-top: 0;
 
@@ -343,6 +343,9 @@
     text-align: center;
     padding: 20px 0;
     min-height: 200px;
+    position: sticky;
+    top: 105px;
+    z-index: 2;
 
     h3 {
       color: black;
@@ -419,14 +422,4 @@
       }
     }
   }
-
-  // @media screen and (max-width: 900px) {
-  //   margin: 0 auto;
-  // }
 }
-
-// @media screen and (max-width: 900px) {
-//   main section {
-//     margin: 0 auto;
-//   }
-// }
