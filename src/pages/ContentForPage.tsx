@@ -75,17 +75,6 @@ const ContentForPage = ({
                   }
                 </ul>
               </article>
-              <article className="contact-us-box">
-                <h3>For an Inquiry</h3>
-                <img src="https://via.placeholder.com/150" alt="contact us" />
-                <h3>XP Drilling</h3>
-                <ul className="contact-info">
-                  <li><FaLocationDot /> P.O.Box KS 17355, Adum-Kumasi, Ghana</li>
-                  <li><a href="mailto:info@xpdrilling.com"><FaEnvelope />  info@xpdrilling.com</a></li>
-                  <li><a href="tel:+233241214994"><FaPhoneVolume /> +233-241-214994</a></li>
-                </ul>
-                <a href="#" className="btn">Contact Us</a>
-              </article>
             </section>
           ) : null
         }

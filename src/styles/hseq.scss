@@ -1,5 +1,4 @@
 .hseqs-container {
-  // width: 60%;
   background-color: white;
   padding: 30px;
 
@@ -29,10 +28,6 @@
       z-index: -1;
       transform: skewY(35deg);
     }
-  }
-
-  p {
-    width: 60%;
   }
 
   .hseqs {
@@ -125,7 +120,7 @@
 .hseqs-with-image {
   margin: 50px auto;
   width: 100%;
-  padding: 40px 10%;
+  padding: 40px calc(10% + 30px);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -177,7 +172,6 @@
 
   p {
     color: white;
-    width: 60%;
     margin-bottom: 30px;
   }
 

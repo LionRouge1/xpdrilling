@@ -2,14 +2,14 @@
 
   .post-banner {
     margin-top: 0;
-    font-size: 24px;
+    // font-size: 24px;
     background-color: white;
-    padding: 30px;
+    padding: 30px calc(10% + 30px);
     width: 100%;
 
     p {
-      width: 70%;
-      margin: 15px auto;
+      // width: 70%;
+      // margin: 15px auto;
       line-height: 30px;
     }
 

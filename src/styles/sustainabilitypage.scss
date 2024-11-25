@@ -4,11 +4,11 @@
   gap: 5%;
   width: 100%;
   background-color: var(--white-color);
-  padding: 5% 10%;
+  padding: 5% calc(10% + 30px);
   margin-top: 0;
 
   .image {
-    height: 450px;
+    height: 350px;
 
     img {
     width: 100%;
@@ -16,7 +16,7 @@
   }}
 
   .content {
-    font-size: 24px;
+    // font-size: 24px;
     display: flex;
     align-items: center;
   }
