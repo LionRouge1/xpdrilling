@@ -52,7 +52,7 @@ const SustainabilityPage = () => {
   ];
 
   const callForAction = {
-    title: 'Ready to explore our services?',
+    title: 'Our Commitment to a Sustainable Future',
     description: ["At XP Drilling Services, ESG is not just an initiative—it's integral to how we conduct our business. By prioritizing environmental stewardship, social responsibility, and governance excellence, we aim to create a positive impact for our stakeholders and the planet.",
       "We are dedicated to continuous improvement in our ESG practices and welcome feedback from our clients, communities, and partners to help us achieve our shared sustainability goals."
     ],
@@ -63,7 +63,7 @@ const SustainabilityPage = () => {
     <>
       <PageBanner
         title="Sustainability"
-        sousTitle="Our Commitment to a Sustainable Future"
+        sousTitle="Balancing Progress with Responsibility"
         image={BannerImg}
       />
       <main className="sustainability-page">

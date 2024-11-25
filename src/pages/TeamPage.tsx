@@ -6,8 +6,8 @@ import '../styles/teampage.scss';
 const TeamPage = () => (
   <>
     <PageBanner
-      title="Our Team Member"
-      sousTitle="Meet the team"
+      title="Our Team"
+      sousTitle="Built on Expertise, Passion, and Dedication"
       image={BannerImg}
     />
     <main>

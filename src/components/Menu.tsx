@@ -13,7 +13,8 @@ const Menu = () => {
   }
 
   const hideMobileMenu = () => {
-    if(window.screen.width > 900 ) return
+    console.log(window.screen.width);
+    // if(window.screen.width > 900 ) return
     const navContainer = document.querySelector('.nav-container');
     if (navContainer?.classList.contains('overlay')) navContainer?.classList.remove('overlay');
   }
@@ -30,10 +31,12 @@ const Menu = () => {
       if(
         document.body.scrollTop > height || document.documentElement.scrollTop > height) {
         navbar.style.position = 'sticky';
-        navbar.style.top = '0'
+        navbar.style.top = '0';
+        navbar.style.boxShadow = "0 3px 10px #ceaa52";
       } else {
         navbar.style.position = 'relative';
-        navbar.style.top = ''
+        navbar.style.top = '';
+        navbar.style.boxShadow = 'none';
       }
     }
 
