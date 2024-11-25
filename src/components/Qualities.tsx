@@ -55,7 +55,7 @@ const Qualities = () => {
               <quality.img />
               <h3>{quality.title}</h3>
             </div>
-            <a href="/"><FaPlus /></a>
+            <i><FaPlus /></i>
           </div>
         ))}
       </article>
