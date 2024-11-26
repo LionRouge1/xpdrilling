@@ -1,7 +1,6 @@
 .horizontal-banner {
   display: flex;
   flex-wrap: wrap;
-  // padding: 40px 0;
   gap: 5%;
   position: relative;
   justify-content: end;
@@ -23,6 +22,15 @@
 
     h2 {
       margin-bottom: 30px;
+    }
+
+    p:nth-child(1)::first-letter {
+      background-color: var(--global-color);
+      color: var(--white-color);
+      font-weight: bold;
+      font-size: 40px;
+      padding: 0 10px;
+      margin-right: 5px;
     }
   }
 
@@ -60,8 +68,16 @@
     }
 
     &-content {
-      width: 80%;
+      width: 100%;
+      // padding: 0 30px;
       margin: 40px auto;
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+    
+    &-content {
+      padding: 0 30px;
     }
   }
 }
@@ -70,17 +86,14 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 0 0 10px 10px;
   background-color: var(--white-color);
-  // color: black;
   margin-top: 0;
   width: 100%;
-  padding: 0 10%;
+  padding: 0 calc(10% + 30px);
 
   &-content {
     display: grid;
-    padding: 40px 30px;
-    // justify-content: center;
+    padding: 40px 0;
     margin: 0 auto;
-    // text-align: center;
   }
 
   @media (max-width: 900px) {
@@ -88,9 +101,13 @@
     border-radius: 0;
 
     &-content {
-      width: 80%;
+      padding: 40px 0;
       text-align: start;
     }
+  }
+
+  @media screen and (max-width: 700px) {
+    padding: 0 30px;
   }
 }
 
@@ -98,6 +115,7 @@
   display: grid;
   grid-template-columns: 28% 1fr;
   gap: 4%;
+  margin: 30px auto;
 
   .page-options {
     order: 1;
@@ -157,6 +175,7 @@
 
       @media (max-width: 700px) {
         display: block;
+        padding: 20px 30px !important;
 
         .page-option-image {
           height: 250px;

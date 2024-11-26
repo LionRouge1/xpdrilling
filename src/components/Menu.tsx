@@ -80,9 +80,6 @@ const Menu = () => {
           <li onClick={hideMobileMenu}>
             <NavLink to="sustainability">Sustainability</NavLink>
           </li>
-          <li onClick={hideMobileMenu}>
-            <NavLink to="contact-us">Contact Us </NavLink>
-          </li>
         </ul>
       </div>
       <a href="#" className="inqurey-btn">

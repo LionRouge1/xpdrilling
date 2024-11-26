@@ -3,16 +3,14 @@
   padding: 30px;
 
   h2 {
-    display: flex;
-    width: 60%;
+    width: fit-content;
     height: 50px;
     padding: 10px;
-    justify-content: center;
-    align-items: center;
     background-color: var(--secondary-color);
     color: var(--global-color);
     font-size: 30px;
     margin-left: -70px;
+    padding-left: 70px;
     margin-bottom: 20px;
     line-height: 1;
     position: relative;
@@ -32,13 +30,11 @@
 
   .hseqs {
     display: flex;
-    // flex-wrap: wrap;
 
     li {
       list-style: none;
-      // min-width: 370px;
+      min-width: 280px;
       max-width: 670px;
-      // flex-basis: 300px;
       margin: 5px 0;
       min-height: 200px;
       text-align: center;
@@ -72,12 +68,21 @@
       }
     }
 
-    @media (max-width: 1500px) {
+    @media (max-width: 1100px) {
       flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
 
       li {
-        width: 320px;
-        max-width: 380px;
+        max-width: 320px;
+      }
+    }
+
+    @media (max-width: 900px) {
+
+      li {
+        max-width: 400px;
       }
     }
   }
@@ -86,6 +91,7 @@
     
     h2 {
       margin-left: -40px;
+      padding-left: 40px;
     }
   }
 
@@ -150,7 +156,7 @@
     color: var(--global-color);
     font-size: 30px;
     margin-top: -70px;
-    // margin-left: -6%;
+    margin-left: -10px;
     margin-bottom: 20px;
     position: relative;
 
@@ -178,11 +184,12 @@
 
   .hseqs-list {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
 
     li {
       list-style: none;
-      width: 300px;
+      min-width: 300px;
+      max-width: 500px;
       margin: 10px;
       min-height: 200px;
       text-align: center;
@@ -210,25 +217,25 @@
         transition: height 0.5s ease;
       }
 
-      // &:nth-child(even) {
-      //   background-color: var(--global-color);
-      //   color: black;
-      // }
-
-      // &:nth-child(odd) {
-      //   background-color: var(--secondary-color);
-      //   color: var(--white-color);
-      // }
-
       .position {
         font-size: 20px;
         font-weight: bold;
       }
     }
+
+    @media screen and (max-width: 1100px) {
+      flex-wrap: wrap;
+      justify-content: center;
+
+      li {
+        min-width: 0;
+        max-width: 350px;
+      }
+    }
   }
 
   @media (max-width: 600px) {
-    // margin-left: -40px;
+    padding: 40px 30px;
 
     p {
       width: 100%;

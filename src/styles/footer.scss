@@ -142,8 +142,6 @@ footer {
       justify-content: space-around;
       place-items: center;
       gap: 10px;
-      // margin-bottom: -8px;
-      // width: 10rem;
 
       li {
         list-style: none;
@@ -170,8 +168,10 @@ footer {
       }
     }
 
-    @media screen and (max-width: 400px) {
+    @media screen and (max-width: 450px) {
       flex-direction: column;
+      padding: 30px;
+      gap: 20px;
 
       .social-media {
         gap: 5px;
