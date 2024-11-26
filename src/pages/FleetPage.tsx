@@ -5,7 +5,6 @@ import ddMachine from '../assets/dd-machine.webp';
 import lm90 from '../assets/LM90.webp';
 import lm110 from '../assets/lm110.webp';
 import coreDrilling from '../assets/core-drilling.webp';
-import fleet1 from '../assets/fleet-01.jpg';
 import fleet2 from '../assets/fleet-02.jpg';
 import ContentForPage from "./ContentForPage";
 

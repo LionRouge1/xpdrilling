@@ -1,6 +1,5 @@
 import PageBanner from "../components/PageBanner";
 import BannerImg from '../assets/about_us.jpg';
-import hseq1 from '../assets/heq.jpg';
 import localCommunity from '../assets/local-community.webp';
 import joinUs from '../assets/vision.jpg';
 import HSEQ from "../components/Hseq";
