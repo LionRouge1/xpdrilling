@@ -1,10 +1,7 @@
 import PageBanner from "../components/PageBanner";
 import BannerImg from '../assets/about_us.jpg';
-// import sustain1 from '../assets/subility-01.jpg'
 import sustain2 from '../assets/subility-02.jpg'
-import sustain3 from '../assets/subility-03.jpg'
-import sustain4 from '../assets/subility-04.jpg'
-import getInTouch from '../assets/get-in-touch.jpg'
+import sustainability from '../assets/sustainability.webp'
 import '../styles/sustainabilitypage.scss';
 import { RiCheckboxCircleFill } from "react-icons/ri"
 import CallForAction from "../components/about/CallForAction";
@@ -16,7 +13,7 @@ const SustainabilityPage = () => {
       description: [
         "XP Drilling Services is dedicated to minimizing our environmental footprint. We employ eco-friendly drilling practices, implement strict environmental controls, and adhere to all relevant regulations. Our aim is to protect the natural ecosystems, minimize resource consumption, and reduce waste generation."
       ],
-      image: sustain2,
+      image: '',
       lists: [
         "Sustainable Drilling Practices",
         "Energy Efficiency",
@@ -29,7 +26,7 @@ const SustainabilityPage = () => {
       description: [
         "We believe in contributing positively to the communities in which we work. Our social initiatives are designed to uplift local communities by creating jobs, supporting local businesses, and investing in education and skill development. We respect local cultures, traditions, and values."
       ],
-      image: sustain3,
+      image: '',
       lists: [
         "Local Employment & Skills Development",
         "Community Engagement",
@@ -41,7 +38,7 @@ const SustainabilityPage = () => {
       description: [
         "XP Drilling Services operates with the highest standards of governance and ethics. Our governance practices prioritize transparency, accountability, and compliance with all relevant laws and regulations. We have robust systems in place to ensure responsible decision-making at all levels of our organization."
       ],
-      image: sustain4,
+      image: '',
       lists: [
         "Transparency & Reporting",
         "Ethical Business Practices",
@@ -56,7 +53,7 @@ const SustainabilityPage = () => {
     description: ["At XP Drilling Services, ESG is not just an initiative—it's integral to how we conduct our business. By prioritizing environmental stewardship, social responsibility, and governance excellence, we aim to create a positive impact for our stakeholders and the planet.",
       "We are dedicated to continuous improvement in our ESG practices and welcome feedback from our clients, communities, and partners to help us achieve our shared sustainability goals."
     ],
-    image: getInTouch,
+    image: sustainability,
     butonText: 'Contact Us'
   }
   return (

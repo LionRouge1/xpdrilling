@@ -1,7 +1,6 @@
 import { FC } from "react";
 import { CallForActionProps } from "../../types";
 import '../../styles/callforaction.scss';
-import { Link } from "react-router-dom";
 
 const CallForAction: FC<CallForActionProps> = ({ title, description, image, butonText }) => {
   return (

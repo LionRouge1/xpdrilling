@@ -38,7 +38,14 @@ const HSEQ: FC<HseqProps> = ({ title, description, lists, image }) => {
         <ul className="hseqs-list">
           {
             lists.map((list: any, index: number) => (
-              <li key={index} className={`hseq ${(index + 1) % 2 == 0 ? 'active': ''}`}>
+              <li
+              key={index}
+              className={
+                `hseq ${
+                lists.length <= 1 || (index + 1) % 2 == 0 ? 'active': ''
+                }`
+              }
+              >
                 <span className="position">{list[0]}</span>
                 {list[1]}
               </li>

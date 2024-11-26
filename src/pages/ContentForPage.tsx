@@ -1,7 +1,5 @@
 import { ContentPageProps } from "../types";
 import PageOption from "../components/about/PageOption";
-import { FaPhoneVolume } from 'react-icons/fa';
-import { FaLocationDot, FaEnvelope } from 'react-icons/fa6';
 import { RiArrowRightSFill } from "react-icons/ri";
 import CallForAction from "../components/about/CallForAction";
 import '../styles/contentforpage.scss';

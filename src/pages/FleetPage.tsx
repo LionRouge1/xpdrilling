@@ -1,6 +1,10 @@
 import PageBanner from "../components/PageBanner";
 import BannerImg from '../assets/about_us.jpg';
-import mission from '../assets/mission.jpg';
+import rcMachine from '../assets/reverse-circulation-machine.webp';
+import ddMachine from '../assets/dd-machine.webp';
+import lm90 from '../assets/LM90.webp';
+import lm110 from '../assets/lm110.webp';
+import coreDrilling from '../assets/core-drilling.webp';
 import fleet1 from '../assets/fleet-01.jpg';
 import fleet2 from '../assets/fleet-02.jpg';
 import ContentForPage from "./ContentForPage";
@@ -16,7 +20,7 @@ const Fleet = () => {
     {
       title: 'Reverse Circulation (RC) Machine',
       description: ['Epiroc Explorac 235'],
-      image: mission,
+      image: rcMachine,
       lists: [
         "C18 Cat engine (550 hp) twin turbo",
         "Epiroc two stage compressor: 2000cfm @ 525psi",
@@ -29,7 +33,7 @@ const Fleet = () => {
     {
       title: 'Diamond Drilling (DD) Machine',
       description: ["Epiroc Boyles C6/C6C"],
-      image: fleet1,
+      image: ddMachine,
       lists: [
         "PQ depth of 770 meters",
         "HQ depth of 1,100 meters, NQ depth of 1,381 meters",
@@ -42,7 +46,7 @@ const Fleet = () => {
     {
       title: 'Underground coring drill (LM 90)',
       description: ['LM 90'],
-      image: mission,
+      image: lm90,
       lists: [
         "C18 Cat engine (550 hp) twin turbo",
         "Equipped with a 130 kN feed frame",
@@ -55,7 +59,7 @@ const Fleet = () => {
     {
       title: 'Core drilling',
       description: ["Diamec Smart 4"],
-      image: fleet1,
+      image: coreDrilling,
       lists: [
         "Drilling diameters: A,B,N",
         "Depth capacity: Vertical down, AO/AT = 1 125 m (3 691 ft) Vertical up, AO/AT = 750 m (2 461 ft)",
@@ -67,7 +71,7 @@ const Fleet = () => {
     {
       title: 'Underground coring drill (LM 110)',
       description: ['LM 110'],
-      image: mission,
+      image: lm110,
       lists: [
         "Equipped with a 128 kN feed frame",
         "Reversible feed cylinder",

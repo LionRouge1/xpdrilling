@@ -36,7 +36,7 @@
 
     li {
       list-style: none;
-      min-width: 370px;
+      // min-width: 370px;
       max-width: 670px;
       // flex-basis: 300px;
       margin: 5px 0;
@@ -72,10 +72,11 @@
       }
     }
 
-    @media (max-width: 1450px) {
+    @media (max-width: 1500px) {
       flex-wrap: wrap;
 
       li {
+        width: 320px;
         max-width: 380px;
       }
     }

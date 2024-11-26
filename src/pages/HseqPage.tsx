@@ -1,6 +1,7 @@
 import PageBanner from "../components/PageBanner";
 import BannerImg from '../assets/about_us.jpg';
 import hseq1 from '../assets/heq.jpg';
+import localCommunity from '../assets/local-community.webp';
 import joinUs from '../assets/vision.jpg';
 import HSEQ from "../components/Hseq";
 import CallForAction from "../components/about/CallForAction";
@@ -18,8 +19,8 @@ const HseqPage = () => {
       description: ['The safety of our workforce and stakeholders is our top priority. We believe that all accidents are preventable and strive to create a zero-harm working environment.'],
       image: '',
       lists: [
-        ["Risk Assessment:", "Every project begins with a comprehensive risk assessment to identify potential hazards. We implement proactive mitigation strategies to minimize risk and ensure the safety of our team and the surrounding community."],
-        ["Continuous Training:", "Our team undergoes regular safety training to stay updated on the latest industry practices and regulatory standards. This ensures they are well-equipped to handle the challenges of each project safely."],
+        ["Risk Assessment:", "We conduct thorough risk assessments and implement proactive strategies to minimize hazards, ensuring safety for our team and community."],
+        ["Continuous Training:", "We provide regular safety training, ensuring our team stays updated on industry practices and is prepared for project challenges."],
         ["Strict Compliance:", "We adhere to both local and international health and safety regulations, ensuring that our operations meet or exceed industry requirements."]
       ]
     },
@@ -38,14 +39,14 @@ const HseqPage = () => {
       description: ['Our commitment to quality is at the heart of every project we undertake. We consistently strive for operational excellence and deliver results that meet or exceed our clients’ expectations.'],
       image: '',
       lists: [
-        ["Quality Control:", "We have stringent quality control measures in place throughout each phase of drilling to ensure precision and accuracy in all outcomes. This includes regular equipment maintenance, operational checks, and continuous monitoring of our processes."],
-        ["Client Satisfaction:", "Delivering exceptional service is central to our business. We work closely with our clients to understand their specific needs and provide tailored solutions that align with their goals, ensuring that each project is completed to the highest standards."]
+        ["Quality Control:", "We enforce stringent quality control measures through equipment maintenance, operational checks, and process monitoring to ensure precision and accuracy in our operations."],
+        ["Client Satisfaction:", "We prioritize exceptional service by understanding client needs, providing tailored solutions, and ensuring each project meets the highest standards of quality and satisfaction."]
       ]
     },
     {
       title: 'Community Engagement',
       description: ['XP Drilling Services believes in the importance of building strong relationships with the communities where we operate. We actively engage with local stakeholders, ensuring that they are well-informed about our activities and that their concerns are addressed.'],
-      image: hseq1,
+      image: localCommunity,
       lists: [
         ["Empowering Local Workforce:", "Through our training and development programs, we aim to uplift and empower the local workforce by creating job opportunities and transferring valuable skills to local populations."]
       ]
