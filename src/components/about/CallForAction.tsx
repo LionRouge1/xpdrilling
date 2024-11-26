@@ -12,7 +12,7 @@ const CallForAction: FC<CallForActionProps> = ({ title, description, image, buto
           <p key={index}>{desc}</p>
         ))
       }
-      <Link to="/contact-us" className="btn">{butonText}</Link>
+      <a href="/contact-us" className="btn">{butonText}</a>
     </section>
   )
 };

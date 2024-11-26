@@ -67,11 +67,10 @@ const SustainabilityPage = () => {
         image={BannerImg}
       />
       <main className="sustainability-page">
-        <section className="sustain-header">
-          <div className="image">
-            <img src={sustain2} alt="sustainability" />
+        <section className="horizontal-banner">
+          <div className="horizontal-banner-image" style={{backgroundImage: `url(${sustain2})`}}>
           </div>
-          <div className="content">
+          <div className="horizontal-banner-content">
             <p>
               At XP Drilling Services, we recognize that our responsibilities extend beyond drilling holes and delivering results. 
               We are deeply committed to the principles of Environmental, Social, and Governance (ESG), 

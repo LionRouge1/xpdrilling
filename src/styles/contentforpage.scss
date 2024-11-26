@@ -10,14 +10,14 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    width: 38%;
-    height: 400px;
+    width: 40%;
+    height: 350px;
     border-radius: 10px;
   }
 
   &-content {
-    width: 50%;
-    font-size: 24px;
+    width: 55%;
+    // font-size: 24px;
     display: flex;
     align-items: center;
 
@@ -29,7 +29,7 @@
   &::before {
     content: '';
     position: absolute;
-    top: -20%;
+    top: -23%;
     right: -12.5%;
     width: 90%;
     height: 140%;
@@ -417,5 +417,11 @@
         }
       }
     }
+  }
+}
+
+.fleet-page {
+  section {
+    padding: 0;
   }
 }

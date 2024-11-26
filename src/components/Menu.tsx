@@ -86,7 +86,7 @@ const Menu = () => {
         </ul>
       </div>
       <a href="#" className="inqurey-btn">
-        INQUERY
+        CONTACT US
       </a>
       <div onClick={showMobileMenu} className="mobile-menu">
         <RxHamburgerMenu />

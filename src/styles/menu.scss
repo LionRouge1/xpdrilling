@@ -8,9 +8,6 @@
   position: relative;
   z-index: 100;
   background-color: #fff;
-  // transition: all 2s ease-in-out;
-  // position: sticky;
-  // top: 100px;
 
   .mobile-menu {
     display: none;
@@ -61,6 +58,11 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      font-size: 16px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: var(--link-color-normal);
+      
 
       &:hover .sous-menu {
         display: block;
@@ -68,9 +70,9 @@
 
       a {
         color: var(--link-color-normal);
-        font-size: 16px;
-        text-transform: uppercase;
-        font-weight: 700;
+        // font-size: 16px;
+        // text-transform: uppercase;
+        // font-weight: 700;
         line-height: 20px;
         text-decoration: none;
 
