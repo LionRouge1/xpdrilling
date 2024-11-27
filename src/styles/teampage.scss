@@ -78,8 +78,8 @@
     background-repeat: no-repeat;
     background-color: var(--blackish-color);
     padding: 100px;
-    // padding-left: 20%;
-    height: 600px;
+    min-height: 300px;
+    max-height: 600px;
 
     p {
       margin-top: 50px;
@@ -89,7 +89,7 @@
   }
 
   &-image {
-    height: 600px;
+    max-height: 600px;
     
     img {
       width: 100%;
@@ -103,7 +103,11 @@
     grid-template-columns: auto;
 
     &-content {
-      padding: 50px;
+      padding: 30px;
+
+      p {
+        margin-top: 0;
+      }
     }
   }
 }
