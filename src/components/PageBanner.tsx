@@ -13,7 +13,7 @@ const PageBanner = ({ title, sousTitle, image }: BannerProps) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           const image = entry.target.querySelector('img')!;
-          image.style.animation = 'bannerSkale 20s forwards';
+          image.style.animation = 'zoom 30s forwards';
         } else {
           const image = entry.target.querySelector('img')!;
           image.style.animation = 'none';

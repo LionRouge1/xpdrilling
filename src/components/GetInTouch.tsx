@@ -6,8 +6,8 @@ import '../styles/getintouch.scss';
 const GetInTouch = () => (
   <section className="get-in-touch">
     <picture>
-      <source media="(min-width: 768px)" srcSet={touchMobile} />
-      <source media="(min-width: 320px)" srcSet={touchMobile2} />
+      <source media="(min-width: 900px)" srcSet={touchMobile} />
+      <source media="(min-width: 500px)" srcSet={touchMobile2} />
       <img src={Touch} alt="Get in Touch" />
     </picture>
     <div className="get-in-touch-content">

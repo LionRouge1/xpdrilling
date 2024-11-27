@@ -31,6 +31,10 @@
     line-height: 46px;
     margin-bottom: 40px;
     text-align: center;
+
+    @media screen and (max-width: 450px) {
+      margin-top: 30px;
+    }
   }
 
   .buttons-con .action-link-wrap {
@@ -84,6 +88,12 @@
     100% {
       transform: translateY(20px);
     }
+  }
+
+  @media (max-width: 450px) {
+    flex-wrap: wrap;
+    padding: 20px;
+    
   }
 
   @media (max-width: 450px) {

@@ -1,4 +1,4 @@
-.hseqs-container {
+.hseq-container {
   background-color: white;
   padding: 30px;
 
@@ -29,7 +29,7 @@
     }
   }
 
-  .hseqs {
+  .hseq-list {
     display: flex;
 
     li {
@@ -115,7 +115,7 @@
       margin-bottom: 20px;
     }
     
-    .hseqs {
+    .hseq-list {
 
       li {
         width: 100%;
@@ -125,7 +125,7 @@
   }
 }
 
-.hseqs-with-image {
+.hseq-with-image {
   margin: 50px auto;
   width: 100%;
   padding: 40px calc(10% + 30px);
@@ -184,7 +184,7 @@
     margin-bottom: 30px;
   }
 
-  .hseqs-list {
+  .hseq-list {
     display: flex;
     justify-content: space-between;
 
@@ -250,6 +250,97 @@
       width: 100%;
       line-height: 1.5;
     }
+  }
+}
+
+.hseq-with-one-option {
+  display: grid;
+  grid-template-columns: 50% 45%;
+  gap: 5%;
+  background-color: #19232be5;
+  color: white;
+  
+
+  .hseq-content {
+    margin: 30px;
+
+    h2 {
+      height: 50px;
+      padding: 10px;
+      background-color: var(--global-color);
+      color: var(--white-color);
+      font-size: 30px;
+      margin-left: -70px;
+      padding-left: 70px;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      line-height: 1;
+      position: relative;
+  
+      &::before {
+        width: 40px;
+        content: '';
+        height: 100%;
+        top: 16px;
+        left: 0;
+        position: absolute;
+        background-color: var(--secondary-color);
+        z-index: -1;
+        transform: skewY(35deg);
+      }
+
+      @media screen and (max-width: 500px) {
+        font-size: 25px;
+      }
+    }
+  }
+
+  .hseq {
+    list-style: none;
+      min-width: 300px;
+      max-width: 500px;
+      margin: 10px;
+      min-height: 200px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      font-size: 16px;
+      gap: 20px;
+      border-radius: 40px;
+      position: relative;
+      background-color: var(--secondary-color);
+      color: var(--white-color);
+      z-index: 0;
+
+      &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 0;
+        bottom: 0;
+        left: 0;
+        border-radius: 40px;
+        z-index: -1;
+        transition: height 0.5s ease;
+      }
+
+      .position {
+        font-size: 20px;
+        font-weight: bold;
+      }
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left;
+  }
+
+  @media screen and (max-width: 900px) {
+    grid-template-columns: auto;
   }
 }
 

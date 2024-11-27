@@ -1,5 +1,5 @@
 import PageBanner from "../components/PageBanner";
-import BannerImg from '../assets/about_us.jpg';
+import BannerImg from '../assets/about-us-banner-image.webp';
 import WhyChooseUs from "../components/WhyChooseUs";
 import OurMission from "../components/OurMission";
 import CoreValues from "../components/CoreValues";

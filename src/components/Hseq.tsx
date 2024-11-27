@@ -5,8 +5,7 @@ import '../styles/hseq.scss';
 const HSEQ: FC<HseqProps> = ({ title, description, lists, image }) => {
 
 
-  useEffect(()=> {
-    // const missions = document.querySelectorAll('.our-mission-content');
+  useEffect(() => {
     const hseqs = document.querySelectorAll('.hseq');
 
     const changeColor = (hseq: Element) => {
@@ -31,39 +30,46 @@ const HSEQ: FC<HseqProps> = ({ title, description, lists, image }) => {
     };
   }, []);
 
-  if (image) return (
-    <section className="hseqs-with-image" style={{ backgroundImage: `url(${image})` }}>
+  if(lists.length == 1) return (
+    <section className="hseq-with-one-option">
+      <div className="hseq-content">
         <h2>{title}</h2>
         <p>{description}</p>
-        <ul className="hseqs-list">
-          {
-            lists.map((list: any, index: number) => (
-              <li
-              key={index}
-              className={
-                `hseq ${
-                lists.length <= 1 || (index + 1) % 2 == 0 ? 'active': ''
-                }`
-              }
-              >
-                <span className="position">{list[0]}</span>
-                {list[1]}
-              </li>
-            ))
-          }
-        </ul>
+        <div className="hseq active">
+          <span className="position">{lists[0][0]}</span>
+          <p>{lists[0][1]}</p>
+        </div>
+      </div>
+      <img src={image} alt={title} />
+    </section>
+  );
+
+  if (image) return (
+    <section className="hseq-with-image" style={{ backgroundImage: `url(${image})` }}>
+      <h2>{title}</h2>
+      <p>{description}</p>
+      <ul className="hseq-list">
+        {
+          lists.map((list: any, index: number) => (
+            <li key={index} className={`hseq ${(index + 1) % 2 == 0 ? 'active' : ''}`}>
+              <span className="position">{list[0]}</span>
+              {list[1]}
+            </li>
+          ))
+        }
+      </ul>
     </section>
   );
 
 
   return (
-    <section className="hseqs-container">
+    <section className="hseq-container">
       <h2>{title}</h2>
       <p>{description}</p>
-      <ul className="hseqs">
+      <ul className="hseq-list">
         {
           lists.map((list: any, index: number) => (
-            <li key={index} className={`hseq ${(index + 1) % 2 == 0 ? 'active': ''}`}>
+            <li key={index} className={`hseq ${(index + 1) % 2 == 0 ? 'active' : ''}`}>
               <span className="position">{list[0]}</span>
               {list[1]}
             </li>

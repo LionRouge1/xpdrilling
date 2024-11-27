@@ -1,5 +1,5 @@
 import PageBanner from "../components/PageBanner";
-import BannerImg from '../assets/about_us.jpg';
+import BannerImg from '../assets/team-banner-image.webp';
 import OurTeam from "../components/about/OurTeam";
 import '../styles/teampage.scss';
 

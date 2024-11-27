@@ -1,5 +1,5 @@
 import PageBanner from "../components/PageBanner";
-import BannerImg from '../assets/about_us.jpg';
+import BannerImg from '../assets/contact-banner-image.webp';
 import ContactUs from "../components/ContactUs";
 import '../styles/contactus.scss';
 

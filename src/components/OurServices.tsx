@@ -1,4 +1,4 @@
-import { GiDiamondHard } from 'react-icons/gi';
+import { GiDiamondHard, GiNeedleDrill } from 'react-icons/gi';
 import Diamond from '../assets/diamond-service.webp';
 import Reverse from '../assets/reverse-circulation.webp';
 import '../styles/ourservices.scss';
@@ -32,7 +32,7 @@ const OurServices = () => (
               <img src={Reverse} alt="Reverse Circulation Techniques" />
             </div>
             <div className="service-footer">
-              <GiDiamondHard />
+              <GiNeedleDrill />
               <h3>Reverse Circulation Techniques</h3>
             </div>
           </li>

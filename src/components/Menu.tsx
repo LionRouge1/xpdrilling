@@ -3,7 +3,7 @@ import { SlClose } from "react-icons/sl";
 import { MdArrowDropDown } from "react-icons/md";
 import XpLogo from '../assets/logo.png';
 import '../styles/menu.scss';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { useEffect } from 'react';
 
 const Menu = () => {
@@ -55,7 +55,7 @@ const Menu = () => {
 
   return (
     <nav className="navbar">
-      <img src={XpLogo} alt="Xp Drilling" />
+      <a href="/"><img src={XpLogo} alt="Xp Drilling" /></a>
       <div className="nav-container">
         <ul className="nav-links">
           <div onClick={hideMobileMenu} className="close-btn">
@@ -84,9 +84,9 @@ const Menu = () => {
           </li>
         </ul>
       </div>
-      <a href="#" className="inqurey-btn">
+      <Link to="/contact-us" className="inqurey-btn">
         CONTACT US
-      </a>
+      </Link>
       <div onClick={showMobileMenu} className="mobile-menu">
         <RxHamburgerMenu />
       </div>
