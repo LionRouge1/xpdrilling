@@ -7,45 +7,16 @@
   --secondary-color: #19232b;
   --gradient-color-first: #ceaa52;
   --gradient-color-last: #ceaa52;
-  --logo-height: 60px;
-  --sticky-logo-height: 60px;
-  --responsive-logo-height: 50px;
   --link-color-normal: #19232b;
   --link-color-hover: #ceaa52;
-  --responsive-breakpoint: 1200px;
   --white-color: #fff;
   --light-bg-color: #f2f3f5;
   --blackish-color: #19232b;
   --blackish-bg-color: #19232b;
   --preheader-bgcolor-custom: #ff5e15;
   --header-height: 105px;
-  --header-background-color: #fff;
-  --menu-background-color: #fff;
   --sticky-header-height: 90px;
-  --sticky-header-background-color: #fff;
-  --main-menu-typography-font-family: Yantramanav;
-  --main-menu-typography-variant: 700;
-  --main-menu-typography-font-size: 16px;
-  --main-menu-typography-line-height: 20px;
-  --main-menu-typography-letter-spacing: 0;
-  --main-menu-typography-color: #19232b;
-  --main-menu-typography-text-transform: uppercase;
-  --main-menu-typography-font-weight: 700;
-  --main-menu-typography-font-style: normal;
-  --main-menu-sticky-color: #19232b;
   --footer-links-color: #abafb5;
-  --titlebar-height: 415px;
-  --footer-1-col-width: 27%;
-  --footer-2-col-width: 23%;
-  --footer-3-col-width: 20%;
-  --footer-4-col-width: 30%;
-  --global-color-rgb: 221, 4, 43;
-  --secondary-color-rgb: 25, 35, 43;
-  --white-color-rgb: 255, 255, 255;
-  --light-bg-color-rgb: 242, 243, 245;
-  --blackish-color-rgb: 25, 35, 43;
-  --blackish-bg-color-rgb: 25, 35, 43;
-  --main-menu-typography-color-rgb: 25, 35, 43;
 }
 
 *, *::before, *::after {
@@ -165,19 +136,12 @@ section h2 {
   }
 }
 
-// .page-option:nth-child(odd) {
-//   // transform: translateX(-100%);
-//   opacity: 0;
-// }
-
-// .page-option:nth-child(even) {
-//   // transform: translateX(100%);
-//   opacity: 0;
-// }
-
-// .visible {
-//   transform: translateX(0) !important;
-//   opacity: 1 !important;
-//   transition: all 3s ease !important;
-// }
+.first-letter {
+  background-color: var(--global-color);
+  color: var(--white-color);
+  font-weight: bold;
+  font-size: 40px;
+  padding: 0 5px;
+  margin-right: 5px;
+}
 

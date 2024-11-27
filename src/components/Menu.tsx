@@ -32,10 +32,12 @@ const Menu = () => {
         document.body.scrollTop > height || document.documentElement.scrollTop > height) {
         navbar.style.position = 'sticky';
         navbar.style.top = '0';
+        navbar.style.height = '90px';
         navbar.style.boxShadow = "0 3px 10px #ceaa52";
       } else {
         navbar.style.position = 'relative';
         navbar.style.top = '';
+        navbar.style.height = '105px';
         navbar.style.boxShadow = 'none';
       }
     }

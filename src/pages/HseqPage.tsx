@@ -2,7 +2,7 @@ import PageBanner from "../components/PageBanner";
 import BannerImg from '../assets/hseq-banner-image.png';
 import localCommunity from '../assets/local-community.webp';
 import joinUs from '../assets/vision.jpg';
-import callForActionImage from '../assets/hseq-call-for-action.png';
+import callForActionImage from '../assets/hseq-call-for-action.webp';
 import HSEQ from "../components/Hseq";
 import CallForAction from "../components/about/CallForAction";
 

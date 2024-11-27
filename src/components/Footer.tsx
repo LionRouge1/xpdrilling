@@ -19,15 +19,15 @@ const Footer = () => {
         <article>
           <h3>Contact Us</h3>
           <ul>
-            <li className="contact-us">
+            <li className="contact-list">
               <FaLocationDot />
               <Link to="/contact-us" className="our-number">P.O.Box KS 17355, Adum-Kumasi, Ghana</Link>
             </li>
-            <li className="contact-us">
+            <li className="contact-list">
               <MdOutlineWifiCalling />
               <a href="tel:+233241214994" className="our-number">+233-241-214994</a>
             </li>
-            <li className="contact-us">
+            <li className="contact-list">
               <FaEnvelope />
               <a href="mailto:info@xpdrilling.com" className="our-number">info@xpdrilling.com</a>
             </li>

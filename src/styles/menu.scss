@@ -4,7 +4,7 @@
   justify-content: space-between;
   align-items: center;
   padding-left: 2rem;
-  min-height: 105px;
+  height: 105px;
   position: relative;
   z-index: 100;
   background-color: #fff;
@@ -138,8 +138,8 @@
     text-transform: uppercase;
     font-weight: 700;
     text-decoration: none;
-    line-height: 105px;
-    height: 105px;
+    line-height: 90px;
+    height: 100%;
     width: 200px;
     position: relative;
     padding-left: 36px;
@@ -166,10 +166,10 @@
     &::after {
       position: absolute;
       content: ">";
-      top: 42%;
       right: 5%;
-      font-size: 15px;
       line-height: 20px;
+      top: calc(50% - 10px);
+      font-size: 17px;
 
       @media (max-width: 1050px) {
         right: 13px;

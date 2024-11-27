@@ -1,6 +1,6 @@
-import Impact from '../../assets/impact.jpg'
+import Impact from '../../assets/impact.webp'
 import CallForAction from './CallForAction';
-import JoinUs from '../../assets/join-us.jpg';
+import JoinUs from '../../assets/make-difference.webp';
 
 const OurImpact = () => (
   <>

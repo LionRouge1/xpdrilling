@@ -3,14 +3,14 @@
   padding: 30px;
   display: grid;
 
-  p:nth-child(1)::first-letter {
-    background-color: var(--global-color);
-    color: var(--white-color);
-    font-weight: bold;
-    font-size: 40px;
-    padding: 0 10px;
-    margin-right: 5px;
-  }
+  // p:nth-child(1)::first-letter {
+  //   background-color: var(--global-color);
+  //   color: var(--white-color);
+  //   font-weight: bold;
+  //   font-size: 40px;
+  //   padding: 0 10px;
+  //   margin-right: 5px;
+  // }
 
   p {
     margin-bottom: 20px;
