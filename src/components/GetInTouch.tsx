@@ -1,4 +1,4 @@
-import Touch from '../assets/get-in-touch.jpg';
+import Touch from '../assets/get-in-touch.png';
 import '../styles/getintouch.scss';
 
 const GetInTouch = () => (

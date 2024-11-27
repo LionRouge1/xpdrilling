@@ -1,6 +1,6 @@
 import PageBanner from "../components/PageBanner";
-import BannerImg from '../assets/about_us.jpg';
-import sustain2 from '../assets/subility-02.jpg'
+import BannerImg from '../assets/sustainability-banner-image.webp';
+import sustain2 from '../assets/sustainability-sousbanner.webp'
 import sustainability from '../assets/sustainability.webp'
 import '../styles/sustainabilitypage.scss';
 import { RiCheckboxCircleFill } from "react-icons/ri"

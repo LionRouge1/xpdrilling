@@ -1,5 +1,5 @@
 import PageBanner from "../components/PageBanner";
-import BannerImg from '../assets/about_us.jpg';
+import BannerImg from '../assets/service-banner-image.png';
 import actionImage from '../assets/service-02.jpg';
 import service1 from '../assets/service-01.webp'
 import service2 from '../assets/service-02.webp'

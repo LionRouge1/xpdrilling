@@ -1,7 +1,8 @@
 import PageBanner from "../components/PageBanner";
-import BannerImg from '../assets/about_us.jpg';
+import BannerImg from '../assets/hseq-banner-image.png';
 import localCommunity from '../assets/local-community.webp';
 import joinUs from '../assets/vision.jpg';
+import callForActionImage from '../assets/hseq-call-for-action.png';
 import HSEQ from "../components/Hseq";
 import CallForAction from "../components/about/CallForAction";
 
@@ -66,7 +67,7 @@ const HseqPage = () => {
     description: ["At XP Drilling Services, we are committed to continuously improving our HSEQ practices. By fostering a culture of excellence and accountability, we ensure that every project is completed with the highest regard for safety, environmental stewardship, and quality.",
       "If you would like to learn more about our HSEQ framework or how we can help meet your specific project requirements, please don’t hesitate to get in touch."
     ],
-    image: joinUs,
+    image: callForActionImage,
     butonText: 'Contact Us'
   }
   return (

@@ -1,6 +1,6 @@
 import { GiDiamondHard } from 'react-icons/gi';
-import Diamond from '../assets/diamond.jpg';
-import Reverse from '../assets/reverse.jpg';
+import Diamond from '../assets/diamond-service.webp';
+import Reverse from '../assets/reverse-circulation.webp';
 import '../styles/ourservices.scss';
 import { Link } from 'react-router-dom';
 

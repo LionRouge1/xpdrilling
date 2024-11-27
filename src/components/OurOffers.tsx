@@ -1,13 +1,13 @@
 import { MdOutlineCheckBox } from "react-icons/md";
-import Offer1 from '../assets/offer1.jpg';
-import Offer2 from '../assets/offer2.jpg';
+import drillingHome from '../assets/Drilling-home.webp';
+import thumpUp from '../assets/thumb-up.webp';
 import '../styles/ouroffers.scss';
 
 const OurOffers = () => (
   <section className="our-offers">
     <div className="offers-images-container">
-      <img src={Offer1} alt="Offer 1" />
-      <img src={Offer2} alt="Offer 2" />
+      <img src={drillingHome} alt="Offer 1" />
+      <img src={thumpUp} alt="Offer 2" />
       <p className="trusted">
         <span className="trusted-text">TRUSTED BY</span>
         <span className="trusted-number">+500</span>

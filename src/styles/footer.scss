@@ -1,5 +1,5 @@
 footer {
-  background-image: url('../assets/footer-bg.png');
+  background-image: url('../assets/footer.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -8,8 +8,23 @@ footer {
   display: flex;
   flex-direction: column;
   padding-top: 100px;
-  // padding: 100px calc(10% + 30px);
   font-size: 16px;
+  position: relative;
+  z-index: 0;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(90deg, #19232bea, #19232b, #19232bf8, #19232b);
+    z-index: -1;
+    background-position: center;
+    background-size: center;  
+    background-repeat: no-repeat;
+  }
 
   .footer-container {
     display: grid;
@@ -39,7 +54,6 @@ footer {
 
       .contact-us {
         display: flex;
-        // flex-wrap: wrap;
         gap: 10px;
         
         svg {

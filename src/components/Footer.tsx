@@ -11,9 +11,9 @@ const Footer = () => {
       <section className="footer-container">
         <article>
           <img src={Logo} alt="Logo" />
-          {/* <p>
-          We bring together innovation, expertise, and state-of-the-art technology to provide top-notch drilling solutions for your projects.
-          </p> */}
+          <p>
+            Reliable. Efficient. Sustainable. XP Drilling Services is here to drive your success
+          </p>
 
         </article>
         <article>

@@ -1,5 +1,5 @@
 import PageBanner from "../components/PageBanner";
-import BannerImg from '../assets/about_us.jpg';
+import BannerImg from '../assets/fleet-banner-image.png';
 import rcMachine from '../assets/reverse-circulation-machine.webp';
 import ddMachine from '../assets/dd-machine.webp';
 import lm90 from '../assets/LM90.webp';

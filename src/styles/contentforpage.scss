@@ -94,6 +94,15 @@
     display: grid;
     padding: 40px 0;
     margin: 0 auto;
+
+    p:nth-child(1)::first-letter {
+      background-color: var(--global-color);
+      color: var(--white-color);
+      font-weight: bold;
+      font-size: 40px;
+      padding: 0 10px;
+      margin-right: 5px;
+    }
   }
 
   @media (max-width: 900px) {
@@ -351,7 +360,6 @@
 
 .side-bar {
   width: 100%;
-  background-color: var(--white-color);
 
   article:nth-child(1) {
     background-color: white;
