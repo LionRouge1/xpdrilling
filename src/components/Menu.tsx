@@ -25,10 +25,10 @@ const Menu = () => {
 
   useEffect(() => {
     const navbar = document.querySelector('.navbar') as HTMLElement;
-    const size = isHomePage()? window.screen.height : 400;
+    const size = isHomePage() ? window.screen.height : 400;
 
-    const makeMenuFixed = (height:number) => {
-      if(
+    const makeMenuFixed = (height: number) => {
+      if (
         document.body.scrollTop > height || document.documentElement.scrollTop > height) {
         navbar.style.position = 'sticky';
         navbar.style.top = '0';
@@ -71,7 +71,7 @@ const Menu = () => {
               <li onClick={hideMobileMenu}><NavLink to="our-team">Our Team Members</NavLink></li>
             </ul>
           </li>
-          
+
           <li onClick={hideMobileMenu}>
             <NavLink to="services">Services</NavLink>
           </li>
@@ -82,11 +82,11 @@ const Menu = () => {
           <li onClick={hideMobileMenu}>
             <NavLink to="sustainability">Sustainability</NavLink>
           </li>
+          <Link onClick={hideMobileMenu} to="/contact-us" className="inqurey-btn">
+          CONTACT US
+        </Link>
         </ul>
       </div>
-      <Link to="/contact-us" className="inqurey-btn">
-        CONTACT US
-      </Link>
       <div onClick={showMobileMenu} className="mobile-menu">
         <RxHamburgerMenu />
       </div>
