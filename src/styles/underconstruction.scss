@@ -1,0 +1,23 @@
+.under-construction {
+  background-image: url('../assets/consutruction.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: calc(100vh - 200px);
+}
+
+.under-constuction-text  {
+  font-size: 2rem;
+}
+
+@media (max-width: 768px) {
+  .under-construction {
+    height: calc(100vh - 30px);
+    background-image: url('../assets/consutruction_mobile.png');
+  }
+
+  .under-constuction-text  {
+    padding: 20px;
+    font-size: 1.5rem;
+  }
+}
