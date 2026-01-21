@@ -18,6 +18,7 @@ export default defineConfig({
         '/contact-us',
         '/hseq',
         '/sustainability',
+        '/404',
       ],
     }),
   ],

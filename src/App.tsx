@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 import Layout from "./Layout";
 import HomePage from "./pages/HomePage";
 import AboutUsPage from "./pages/AboutUsPage";
@@ -22,7 +22,8 @@ const App = () => (
         <Route path="contact-us" element={<ContactUsPage />} />
         <Route path="hseq" element={<HseqPage />} />
         <Route path="sustainability" element={<SustainabilityPage />} />
-        <Route path='*' element={<NotFound />} />
+        <Route path="404" element={<NotFound />} />
+        <Route path="*" element={<Navigate to="/404" replace />} />
       </Route>
     </Routes>
   </BrowserRouter>
